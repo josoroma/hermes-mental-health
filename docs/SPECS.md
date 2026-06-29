@@ -1,14 +1,11 @@
 # SPECS.md — Hermes Mental Health (Practitioner Web App)
 
-A Next.js re-implementation of the practitioner-facing application from
-[`josoroma/hermes-mental-health-mvp`](https://github.com/josoroma/hermes-mental-health-mvp)
-(Parts 1–6 of its tutorial). Built with **shadcn/ui** (**dark mode only**), **Jotai**,
+A Next.js re-implementation of the practitioner-facing application.
+Built with **shadcn/ui** (**dark mode only**), **Jotai**,
 **React Hook Form**, **Zod**, and the shadcn **"luma" theme**
 ([preset](https://ui.shadcn.com/create?preset=b2D0wqNxT)).
 
-Background and domain understanding: see [`README-MENTAL-HEALTH-PY.md`](./README-MENTAL-HEALTH-PY.md).
-The `.hermes` agentic runtime and Python/FastAPI back end (Part 7) are **replaced** by Next.js API
-routes + server actions + `.hermes/` configuration; this app runs
+This app runs
 against a **file-backed local data layer** (`data/patients/<id>/*.json,*.md`) whose assessment
 definitions are **generated from a DSM-5-TR corpus** (`data/corpus/` → `data/shared/templates/`)
 and preserves the same domain vocabulary and patient-scoping guarantees. Its **one external integration**

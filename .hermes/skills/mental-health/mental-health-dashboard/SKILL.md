@@ -249,3 +249,4 @@ Server components (pages) import from `patients-server`; client components stay 
 - `references/mdx-editor-dark-mode.md` — MDX Editor (`@mdxeditor/editor`) dark mode integration: required global CSS (hashed class selectors, portal popups, combobox trigger buttons), z-index for shadcn Dialog, plugin setup, text visibility gotchas, SSR guard pattern.
 - `references/agent-chat-prompts.md` — Agent chat quick-inject button prompts and skills mapping (Care Plan audit, Session Note audit, Progress Report, Safety Check).
 - `references/screenshot-capture.md` — macOS screenshot capture workflow: display-level capture with `screencapture -D2`, browser navigation script, multi-section page strategy.
+- `references/docs-generation-workflow.md` — Batch screenshot capture, prev/next nav links, logo embedding for docs/*.md pages.

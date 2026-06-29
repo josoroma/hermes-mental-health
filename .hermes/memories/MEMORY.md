@@ -6,10 +6,10 @@ Hermes gateway on :8642 for AI features. Start: API_SERVER_ENABLED=true API_SERV
 §
 AI markdown: zero preamble, first char '#', simple elements (##/**, bullets, ---). No file paths, no 'Written to', no format talk in prompts—format rules in system prompt only. Files versioned to version/<type>-{ts}.md on overwrite.
 §
-Agent chat: inject*Prompt() in agent-chat.tsx (NOT lib/prompts.ts). AUDIT pattern — evaluate existing data, don't generate new. Structured output: score, strengths, gaps, safety, revisions. Session notes audit clinical CONTENT (symptom trajectory, treatment response) not template structure. Screenshots: Edge via screencapture -D2.
-§
 MDXEditor: never next/dynamic, use useEffect mount guard + rAF mountedRef. Dark mode: aggressive !important CSS with [class*=''] attribute selectors, explicit oklch values. Inline editing (no modals) for Demographics + Consent.
 §
-Prefers 'Audit' not 'Review' for clinical doc evaluation. Audit = evaluate existing against data, return score/strengths/gaps/revisions. Screenshots: Edge browser via screencapture -D2, multiple by page when below-fold, embed inline ![](screenshots/...).
+Screenshots: Edge on secondary display, `screencapture -o -x -D2`, no desktop chrome. Scroll via AppleScript key codes 121/115/125. Multi-section pages get top+bottom captures. Embed inline: `![](screenshots/file.png)`.
 §
-Screenshots: use Edge browser on secondary display, capture via `screencapture -o -x -D2`. Never full-desktop captures. Navigate with `open -a "Microsoft Edge" <url>`, scroll with AppleScript key code 125/121/115. Multi-section pages get separate top+bottom captures.
+Agent chat prompts: AUDIT pattern only (evaluate existing, never generate new). inject*Prompt() functions in agent-chat.tsx. Output: score, strengths, gaps, safety, revisions. Care Plan audits vs assessments; Session Note audits clinical content not template.
+§
+Video: edge-tts JennyNeural +3% +2Hz, ffmpeg AVFoundation display 2 libx264 crf 18. Logo intro/outro 3s each. Docs: all md have prev/next nav, logo links to https://youtu.be/8tiaDHI6uGo. No Python references — pure TS/Next.js.
