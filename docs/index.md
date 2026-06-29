@@ -102,3 +102,6 @@ Detailed documentation for each page:
 - [Agent Chat](./agent-chat.md) — AI chat with context-aware prompts
 - [Assessment Editor](./editor.md) — Measure metadata, fields, scoring, chart configuration
 - [Assessment Form](./assessment-form.md) — Patient-facing form submission flow
+---
+
+[SPECS](SPECS.md) →

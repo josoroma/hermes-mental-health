@@ -190,3 +190,6 @@ When a measure has empty `severityThresholds`:
 | `lib/actions/result-files.ts` | `saveResultFile()`, `readResultFile()`, `listResultFiles()`, `updateResultFile()`, `moveResultToDeleted()`, `listDeletedResultFiles()` |
 | `lib/scoring/engine.ts` | Scoring: total, average, T-score, domain max, severity |
 | `components/result-chart.tsx` | Chart component (severity bars, domain bars, gauges) |
+---
+
+← [assessments](assessments.md) | [sessions](sessions.md) →

@@ -946,3 +946,6 @@ npm run lint              # ESLint
 | 2026-06-28 | Updated architecture tree to reflect current codebase layout | @dev |
 | 2026-06-28 | Created docs/ with per-page documentation and screenshots | @dev |
 | 2026-06-28 | Code style refactor: single quotes, no semicolons, `@/` paths, named exports, arrow functions, trailing commas | @dev |
+---
+
+← [index](index.md) | [dashboard](dashboard.md) →

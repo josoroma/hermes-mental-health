@@ -139,3 +139,6 @@ Form Submit          → saveResultFile()     → data/patients/<id>/results/tak
 | `lib/invites/token.ts` | 32-char URL-safe token generation |
 | `app/a/[token]/page.tsx` | Patient-facing assessment form page |
 | `app/a/[token]/_components/assessment-form.tsx` | Form: scores, saves, redirects |
+---
+
+← [patient-profile](patient-profile.md) | [results](results.md) →

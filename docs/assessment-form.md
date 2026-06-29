@@ -115,3 +115,6 @@ The **← Back to Assessments** link at the top navigates to `/patients/<patient
 | `lib/actions/result-files.ts` | `saveResultFile()` |
 | `lib/scoring/engine.ts` | `scoreResult()` |
 | `components/field-renderer.tsx` | Renders field by type (scale, text, select, etc.) |
+---
+
+← [editor](editor.md) | [VIDEO](VIDEO.md) →

@@ -128,3 +128,6 @@ Collapsible "Deleted Sessions (N)" toggle at the bottom of the list. Loads from 
 | `app/patients/[id]/_components/clinical-items-section.tsx` | Reusable list component (sessions + notes) |
 | `lib/actions/clinical-notes.ts` | `createClinicalItem()`, `listClinicalItems()`, `readClinicalItem()`, `saveClinicalItem()`, `deleteClinicalItem()` |
 | `data/shared/templates/md/session-template.json` | Default session template |
+---
+
+← [results](results.md) | [notes](notes.md) →

@@ -59,3 +59,6 @@ Same as Sessions — create, view, edit, delete — using the same `ClinicalItem
 | `app/patients/[id]/sessions/[itemId]/view/_components/view-page.tsx` | Read-only view (reused by notes) |
 | `lib/actions/clinical-notes.ts` | Same server actions as sessions |
 | `data/shared/templates/md/note-template.json` | Default note template |
+---
+
+← [sessions](sessions.md) | [agent-chat](agent-chat.md) →

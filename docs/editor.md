@@ -105,3 +105,6 @@ Tries in order:
 | `app/editor/[slug]/_components/scoring-tab.tsx` | Scoring type + thresholds |
 | `app/editor/[slug]/_components/chart-tab.tsx` | Chart type selector + preview |
 | `lib/data/measures.ts` | `getMeasure()`, `loadMeasures()` |
+---
+
+← [agent-chat](agent-chat.md) | [assessment-form](assessment-form.md) →

@@ -134,3 +134,6 @@ When **UI Labels** checkbox is toggled on, semantic CSS classes are applied:
 | `app/agent/_components/agent-sidebar.tsx` | Filesystem tree sidebar |
 | `app/api/agent/chat/route.ts` | API: agent chat endpoint |
 | `lib/prompts.ts` | Prompt catalog for AgentModal (legacy, not used by chat page) |
+---
+
+← [notes](notes.md) | [editor](editor.md) →

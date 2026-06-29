@@ -230,3 +230,6 @@ Standalone component at `app/patients/[id]/_components/consent-card.tsx`:
 | `app/api/clinical/generate/route.ts` | AI markdown generation API |
 | `lib/actions/clinical-files.ts` | `readClinicalFile()`, `saveClinicalFile()`, `saveClinicalFileWithBackup()` |
 | `lib/actions/patient-files.ts` | `readDemographics()`, `saveDemographics()`, `readConsent()`, `saveConsent()` |
+---
+
+← [dashboard](dashboard.md) | [assessments](assessments.md) →

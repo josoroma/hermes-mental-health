@@ -171,3 +171,6 @@ The **UI Labels** checkbox in the top banner adds semantic CSS class labels to e
 | `lib/data/patients-server.ts` | Server-only — `listAllPatients()` reads filesystem |
 | `lib/actions/create-patient.ts` | Server action — creates patient profile.json |
 | `lib/actions/assessment-files.ts` | Server action — deletes custom assessments |
+---
+
+← [SPECS](SPECS.md) | [patient-profile](patient-profile.md) →
