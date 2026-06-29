@@ -1,8 +1,8 @@
 # Hermes Mental Health
 
-[![](docs/logo.png)](https://youtu.be/8tiaDHI6uGo)
+[![](docs/logo.png)](https://youtu.be/243szSUEo3g)
 
-*[▶ Watch the walkthrough video](https://youtu.be/8tiaDHI6uGo)*
+*[▶ Watch the walkthrough video](https://youtu.be/243szSUEo3g)*
 
 Next.js practitioner web app + Hermes Agent runtime for DSM-5-TR assessment management. A dark-mode shadcn/ui dashboard for mental health practitioners — patient profiles, assessment invites, scored results with charts, clinical notes, and AI-powered workflows.
 

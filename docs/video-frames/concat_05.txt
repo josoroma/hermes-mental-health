@@ -1,0 +1,2 @@
+file '/Users/josoroma/projects/hermes-mental-health/docs/video-frames/clip_05_0.mp4'
+file '/Users/josoroma/projects/hermes-mental-health/docs/video-frames/clip_05_1.mp4'

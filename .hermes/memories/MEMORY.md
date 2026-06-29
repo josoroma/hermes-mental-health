@@ -8,8 +8,8 @@ AI markdown: zero preamble, first char '#', simple elements (##/**, bullets, ---
 §
 MDXEditor: never next/dynamic, use useEffect mount guard + rAF mountedRef. Dark mode: aggressive !important CSS with [class*=''] attribute selectors, explicit oklch values. Inline editing (no modals) for Demographics + Consent.
 §
-Screenshots: Edge on secondary display, `screencapture -o -x -D2`, no desktop chrome. Scroll via AppleScript key codes 121/115/125. Multi-section pages get top+bottom captures. Embed inline: `![](screenshots/file.png)`.
+Screenshots: Playwright headless Chromium at 1920×1080 (preferred). Fallback: Edge on secondary display, `screencapture -o -x -D2`. Multi-section pages get top+bottom captures. Embed inline: `![](screenshots/file.png)`.
 §
 Agent chat prompts: AUDIT pattern only (evaluate existing, never generate new). inject*Prompt() functions in agent-chat.tsx. Output: score, strengths, gaps, safety, revisions. Care Plan audits vs assessments; Session Note audits clinical content not template.
 §
-Video: edge-tts JennyNeural +3% +2Hz, ffmpeg AVFoundation display 2 libx264 crf 18. Logo intro/outro 3s each. Docs: all md have prev/next nav, logo links to https://youtu.be/8tiaDHI6uGo. No Python references — pure TS/Next.js.
+Video walkthrough: per-segment TTS (split narration by --- delimiters, separate MP3 per segment, ffprobe duration). Each screenshot shown for exactly its segment's audio duration. Playwright captures screenshots (can click Edit buttons, scroll). `python3 docs/build-video.py` composes via ffmpeg. "Regenerate" = full pipeline from scratch — mkdir -p, verify dev server, recapture all screenshots, regen all TTS, rebuild. Never hardcode timestamps.

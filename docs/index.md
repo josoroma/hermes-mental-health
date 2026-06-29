@@ -1,8 +1,8 @@
 # Hermes Mental Health — Practitioner Dashboard
 
-[![](logo.png)](https://youtu.be/8tiaDHI6uGo)
+[![](logo.png)](https://youtu.be/243szSUEo3g)
 
-*[▶ Watch the walkthrough video](https://youtu.be/8tiaDHI6uGo)*
+*[▶ Watch the walkthrough video](https://youtu.be/243szSUEo3g)*
 
 A Next.js web application for DSM-5-TR assessment management. This dashboard enables mental health practitioners to manage patients, administer and score clinical assessments, generate AI-assisted content, and track treatment progress.
 
