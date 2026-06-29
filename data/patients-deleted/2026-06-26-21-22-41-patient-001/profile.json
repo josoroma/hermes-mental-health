@@ -1,0 +1,8 @@
+{
+  "id": "patient-001",
+  "name": "María González",
+  "ageRange": "35-44",
+  "gender": "Femenino",
+  "createdAt": "2026-06-10T08:00:00.000Z",
+  "updatedAt": "2026-06-19T14:00:00.000Z"
+}

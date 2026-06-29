@@ -1,0 +1,614 @@
+[
+  {
+    "slug": "cfi-alternative",
+    "title": "Cfi Alternative",
+    "description": "Alternative Versions of the Cultural Formulation Interview (CFI)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "none",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "cfi-core",
+    "title": "Cfi Core",
+    "description": "Page 1 of 3 Cultural Formulation Interview (CFI)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "none",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "cfi-informant",
+    "title": "Cfi Informant",
+    "description": "Page 1 of 3 Cultural Formulation Interview (CFI)\u2014Informant Version",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "none",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "cfi-supplementary",
+    "title": "Supplementary Modules to the Core Cultural Formulation Interview (CFI)",
+    "description": "Guidelines for Implementing the CFI Supplementary Modules",
+    "version": "1.0.0",
+    "field_count": 128,
+    "resultChart": "none",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "clinician-autism",
+    "title": "CLINICIAN-RATED SEVERITY OF",
+    "description": "AUTISM SPECTRUM AND SOCIAL COMMUNICATION DISORDERS",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "clinician-cd",
+    "title": "CLINICIAN-RATED SEVERITY OF",
+    "description": "Name: __________________________________ Age: ____ Date:_____________",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "clinician-nssi",
+    "title": "CLINICIAN-RATED SEVERITY OF",
+    "description": "Name: __________________________________ Age: ____                                        Date:_____________",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "clinician-odd",
+    "title": "CLINICIAN-RATED SEVERITY OF",
+    "description": "Name: __________________________________ Age: ____                                     Date:_____________",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "clinician-psychosis",
+    "title": "Clinician-Rated Dimensions of Psychosis Symptom Severity",
+    "description": "Name:________________________________ Age: _______ Date:________________",
+    "version": "1.0.0",
+    "field_count": 8,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "clinician-somatic",
+    "title": "CLINICIAN-RATED SEVERITY OF",
+    "description": "Name: __________________________________ Age: ____ Date:_____________",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "edhb-clinician",
+    "title": "Early Development and Home Background (EDHB) Form\u2014Clinician",
+    "description": "(This form is to be completed if this is your FIRST encounter with the child receiving care)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "none",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "edhb-parent",
+    "title": "Early Development and Home Background (EDHB) Form\u2014Parent/Guardian",
+    "description": "Child\u2019s Name: __________________________ Age: ____ Date:__________",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "none",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "level1-adult",
+    "title": "DSM-5-TR Self-Rated Level 1 Cross-Cutting Symptom Measure\u2014Adult",
+    "description": "Name: ___________________________ Age: ____ Date:________",
+    "version": "1.0.0",
+    "field_count": 13,
+    "resultChart": "domain_bars",
+    "scoring_type": "domain_max"
+  },
+  {
+    "slug": "level1-child-11-17",
+    "title": "DSM-5-TR Self-Rated Level 1 Cross-Cutting Symptom Measure\u2014Child Age 11\u201317",
+    "description": "Name: ________________________________ Age: ____                                                    Date:___________",
+    "version": "1.0.0",
+    "field_count": 5,
+    "resultChart": "domain_bars",
+    "scoring_type": "domain_max"
+  },
+  {
+    "slug": "level1-parent-child-6-17",
+    "title": "DSM-5-TR Parent/Guardian-Rated Level 1 Cross-Cutting Symptom Measure\u2014Child Age 6\u201317",
+    "description": "Child\u2019s Name: _________________________________ Age: ____ Date:___________",
+    "version": "1.0.0",
+    "field_count": 6,
+    "resultChart": "domain_bars",
+    "scoring_type": "domain_max"
+  },
+  {
+    "slug": "level2-anger-adult",
+    "title": "LEVEL 2\u2014Anger\u2014Adult",
+    "description": "PROMIS Emotional Distress\u2014Anger\u2014Short Form",
+    "version": "1.0.0",
+    "field_count": 5,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-anger-child",
+    "title": "LEVEL 2\u2014Anger\u2014Child Age 11\u201317",
+    "description": "PROMIS Emotional Distress\u2014Calibrated Anger Measure\u2014Pediatric",
+    "version": "1.0.0",
+    "field_count": 6,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-anger-parent",
+    "title": "LEVEL 2\u2014Anger\u2014Parent/Guardian of Child Age 6-17",
+    "description": "PROMIS Emotional Distress\u2014Calibrated Anger Measure\u2014Parent",
+    "version": "1.0.0",
+    "field_count": 5,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-anxiety-adult",
+    "title": "LEVEL 2\u2014Anxiety\u2014Adult",
+    "description": "*PROMIS Emotional Distress\u2014Anxiety\u2014Short Form",
+    "version": "1.0.0",
+    "field_count": 7,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-anxiety-child",
+    "title": "LEVEL 2\u2014Anxiety\u2014Child Age 11\u201317",
+    "description": "PROMIS Emotional Distress\u2014Anxiety\u2014Pediatric Item Bank",
+    "version": "1.0.0",
+    "field_count": 13,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-anxiety-parent",
+    "title": "LEVEL 2\u2014Anxiety\u2014Parent/Guardian of Child Age 6-17",
+    "description": "Adapted from PROMIS Emotional Distress\u2014Anxiety\u2014Parent Item Bank",
+    "version": "1.0.0",
+    "field_count": 9,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-depression-adult",
+    "title": "LEVEL 2\u2014Depression\u2014Adult",
+    "description": "PROMIS Emotional Distress\u2014Depression\u2014Short Form",
+    "version": "1.0.0",
+    "field_count": 8,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-depression-child",
+    "title": "LEVEL 2\u2014Depression\u2014Child Age 11\u201317",
+    "description": "PROMIS Emotional Distress\u2014Depression\u2014Pediatric Item Bank",
+    "version": "1.0.0",
+    "field_count": 14,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-depression-parent",
+    "title": "LEVEL 2\u2014Depression\u2014Parent/Guardian of Child Age 6-17",
+    "description": "PROMIS Emotional Distress\u2014Depression\u2014Parent Item Bank",
+    "version": "1.0.0",
+    "field_count": 11,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-inattention-parent",
+    "title": "LEVEL 2\u2014Inattention\u2014Parent/Guardian of Child Age 6\u201317",
+    "description": "* Swanson , Nolan, and Pelham, version IV (SNAP-IV)",
+    "version": "1.0.0",
+    "field_count": 8,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "level2-irritability-child",
+    "title": "LEVEL 2\u2014Irritability\u2014Child Age 11\u201317",
+    "description": "* Affective Reactivity Index (ARI)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "level2-irritability-parent",
+    "title": "LEVEL 2\u2014Irritability\u2014Parent/Guardian of Child Age 6\u201317",
+    "description": "* Affective Reactivity Index (ARI)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "level2-mania-adult",
+    "title": "LEVEL 2\u2014Mania\u2014Adult",
+    "description": "Altman Self-Rating Mania Scale (ASRM)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "level2-mania-child",
+    "title": "LEVEL 2\u2014Mania\u2014Child Age 11\u201317",
+    "description": "* Altman Self-Rating Mania Scale (ASRM)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "level2-mania-parent",
+    "title": "LEVEL 2\u2014Mania\u2014Parent/Guardian of Child Age 6\u201317",
+    "description": "Adapted from the Altman Self-Rating Mania Scale (ASRM)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "level2-repetitive-adult",
+    "title": "LEVEL 2\u2014Repetitive Thoughts and Behaviors\u2014Adult",
+    "description": "*Adapted from the Florida Obsessive-Compulsive Inventory (FOCI) Severity Scale (Part B)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "level2-repetitive-child",
+    "title": "LEVEL 2\u2014Repetitive Thoughts and Behaviors\u2014Child Age 11\u201317",
+    "description": "Adapted from the Children\u2019s Florida Obsessive-Compulsive Inventory (C-FOCI) Severity Scale",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "level2-sleep-adult",
+    "title": "LEVEL 2\u2014Sleep Disturbance\u2014Adult",
+    "description": "*PROMIS\u2014Sleep Disturbance\u2014Short Form",
+    "version": "1.0.0",
+    "field_count": 6,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-sleep-child",
+    "title": "LEVEL 2\u2014Sleep Disturbance\u2014Child Age 11\u201317",
+    "description": "PROMIS\u2014Sleep Disturbance\u2014Short Form",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-sleep-parent",
+    "title": "LEVEL 2\u2014Sleep Disturbance\u2014Parent/Guardian of Child Age 6-17",
+    "description": "PROMIS\u2014Sleep Disturbance\u2014Short Form",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-somatic-adult",
+    "title": "LEVEL 2\u2014Somatic Symptom\u2014Adult Patient",
+    "description": "Adapted from the Patient Health Questionnaire Physical Symptoms (PHQ-15)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "level2-somatic-child",
+    "title": "LEVEL 2\u2014Somatic Symptom\u2014Child Age 11\u201317",
+    "description": "Adapted from the Patient Health Questionnaire Physical Symptoms (PHQ-15)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "level2-somatic-parent",
+    "title": "LEVEL 2\u2014Somatic Symptom\u2014Parent/Guardian of Child Age 6-17",
+    "description": "Adapted from the Patient Health Questionnaire Physical Symptoms (PHQ-15)",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "level2-substance-adult",
+    "title": "LEVEL 2\u2014Substance Use\u2014Adult",
+    "description": "Adapted from the NIDA-Modified ASSIST",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-substance-child",
+    "title": "LEVEL 2\u2014Substance Use\u2014Child Age 11\u201317",
+    "description": "Adapted from the NIDA-Modified ASSIST",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "level2-substance-parent",
+    "title": "LEVEL 2\u2014Substance Use\u2014Parent/Guardian of Child Age 6\u201317",
+    "description": "Adapted from the NIDA-Modified ASSIST",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "t_score"
+  },
+  {
+    "slug": "pid5-adult",
+    "title": "FOR CLINICIAN USE ONLY A. Personality Trait",
+    "description": "PID-5\u2014Adult (Full Version), page 1 The Personality Inventory for DSM-5 (PID-5)\u2014Adult",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "pid5-bf-adult",
+    "title": "The Personality Inventory for DSM-5\u2014Brief Form (PID-5-BF)\u2014Adult",
+    "description": "Name: _______________________ Age: ____ Date:_____________",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "domain_bars",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "pid5-bf-child",
+    "title": "The Personality Inventory for DSM-5\u2014Brief Form (PID-5-BF)\u2014Child Age 11\u201317",
+    "description": "Name: _______________________ Age: ____ Date:_____________",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "domain_bars",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "pid5-child",
+    "title": "FOR CLINICIAN USE ONLY A. Personality Trait Facet B. PID-5 items C. Total/Partial",
+    "description": "PID-5\u2014Child (Full Version), Page 1 The Personality Inventory for DSM-5 (PID-5)\u2014Child Age 11\u201317",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "pid5-irf-adult",
+    "title": "FOR CLINICIAN USE ONLY A. Personality Trait",
+    "description": "PID-5-IRF (Informant Version), Page 1 The Personality Inventory for DSM-5\u2014Informant Form (PID-5-IRF)\u2014Adult",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "t_score_gauge",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-acute-stress-adult",
+    "title": "Severity of Acute Stress Symptoms\u2014Adult",
+    "description": "National Stressful Events Survey Acute Stress Disorder Short Scale (NSESSS)",
+    "version": "1.0.0",
+    "field_count": 7,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-acute-stress-child",
+    "title": "Severity of Acute Stress Symptoms\u2014Child Age 11\u201317",
+    "description": "National Stressful Events Survey Acute Stress Disorder Short Scale (NSESSS)",
+    "version": "1.0.0",
+    "field_count": 7,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-agoraphobia-adult",
+    "title": "Severity Measure for Agoraphobia\u2014Adult",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-agoraphobia-child",
+    "title": "Severity Measure for Agoraphobia\u2014Child Age 11\u201317",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-depression-adult",
+    "title": "Severity Measure for Depression\u2014Adult",
+    "description": "Adapted from the Patient Health Questionnaire\u20139 (PHQ-9)",
+    "version": "1.0.0",
+    "field_count": 9,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "severity-depression-child",
+    "title": "Severity Measure for Depression\u2014Child Age 11\u201317",
+    "description": "PHQ-9 modified for Adolescents (PHQ-A)\u2014Adapted",
+    "version": "1.0.0",
+    "field_count": 1,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "severity-dissociative-adult",
+    "title": "Severity of Dissociative Symptoms\u2014Adult",
+    "description": "Brief Dissociative Experiences Scale (DES-B)\u2014Modified",
+    "version": "1.0.0",
+    "field_count": 8,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-dissociative-child",
+    "title": "Severity of Dissociative Symptoms\u2014Child Age 11\u201317",
+    "description": "Brief Dissociative Experiences Scale (DES-B)\u2014Modified",
+    "version": "1.0.0",
+    "field_count": 8,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-gad-adult",
+    "title": "Severity Measure for Generalized Anxiety Disorder\u2014Adult",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-gad-child",
+    "title": "Severity Measure for Generalized Anxiety Disorder\u2014Child Age 11\u201317",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-panic-adult",
+    "title": "Severity Measure for Panic Disorder\u2014Adult",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-panic-child",
+    "title": "Severity Measure for Panic Disorder\u2014Child Age 11\u201317",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-ptsd-adult",
+    "title": "Severity of Posttraumatic Stress Symptoms\u2014Adult",
+    "description": "National Stressful Events Survey PTSD Short Scale (NSESSS)",
+    "version": "1.0.0",
+    "field_count": 9,
+    "resultChart": "severity_bar",
+    "scoring_type": "total"
+  },
+  {
+    "slug": "severity-ptsd-child",
+    "title": "Severity of Posttraumatic Stress Symptoms\u2014Child Age 11\u201317",
+    "description": "National Stressful Events Survey PTSD Short Scale (NSESSS)",
+    "version": "1.0.0",
+    "field_count": 9,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-separation-anxiety-adult",
+    "title": "Severity Measure for Separation Anxiety Disorder\u2014Adult",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-separation-anxiety-child",
+    "title": "Severity Measure for Separation Anxiety Disorder\u2014Child Age 11\u201317",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-social-anxiety-adult",
+    "title": "Severity Measure for Social Anxiety Disorder (Social Phobia)\u2014Adult",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-social-anxiety-child",
+    "title": "Severity Measure for Social Anxiety Disorder (Social Phobia)\u2014Child Age 11\u201317",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-specific-phobia-adult",
+    "title": "Severity Measure for Specific Phobia\u2014Adult",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "severity-specific-phobia-child",
+    "title": "Severity Measure for Specific Phobia\u2014Child Age 11\u201317",
+    "description": "Name: ____________________________________ Age: ______ Date: _________________",
+    "version": "1.0.0",
+    "field_count": 10,
+    "resultChart": "severity_bar",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "whodas-proxy",
+    "title": "WHODAS 2.0",
+    "description": "World Health Organization Disability Assessment Schedule 2.0",
+    "version": "1.0.0",
+    "field_count": 29,
+    "resultChart": "domain_bars",
+    "scoring_type": "average"
+  },
+  {
+    "slug": "whodas-self",
+    "title": "WHODAS 2.0",
+    "description": "World Health Organization Disability Assessment Schedule 2.0",
+    "version": "1.0.0",
+    "field_count": 29,
+    "resultChart": "domain_bars",
+    "scoring_type": "average"
+  }
+]

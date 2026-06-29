@@ -1,0 +1,160 @@
+{
+  "slug": "adoption-child-needs-match",
+  "title": "Adoption Child Needs and Family Match",
+  "description": "Compares child needs with family capacity across emotional, educational, cultural, and practical domains.",
+  "version": "1.0.0",
+  "instructions": "Use only with appropriate child-protection safeguards and professional review.",
+  "resultChart": "scatter_chart",
+  "fields": [
+    {
+      "id": "emotional_capacity_match",
+      "label": "Family capacity to meet emotional needs",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Poor match"
+        },
+        {
+          "value": 1,
+          "label": "Weak match"
+        },
+        {
+          "value": 2,
+          "label": "Partial match"
+        },
+        {
+          "value": 3,
+          "label": "Good match"
+        },
+        {
+          "value": 4,
+          "label": "Strong match"
+        }
+      ]
+    },
+    {
+      "id": "education_health_match",
+      "label": "Capacity to meet education and health needs",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Poor match"
+        },
+        {
+          "value": 1,
+          "label": "Weak match"
+        },
+        {
+          "value": 2,
+          "label": "Partial match"
+        },
+        {
+          "value": 3,
+          "label": "Good match"
+        },
+        {
+          "value": 4,
+          "label": "Strong match"
+        }
+      ]
+    },
+    {
+      "id": "identity_culture_match",
+      "label": "Support for identity, culture, and life story",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not supported"
+        },
+        {
+          "value": 1,
+          "label": "Minimally supported"
+        },
+        {
+          "value": 2,
+          "label": "Partially supported"
+        },
+        {
+          "value": 3,
+          "label": "Well supported"
+        },
+        {
+          "value": 4,
+          "label": "Strongly supported"
+        }
+      ]
+    },
+    {
+      "id": "long_term_commitment",
+      "label": "Long-term commitment capacity",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Unclear"
+        },
+        {
+          "value": 1,
+          "label": "Weak"
+        },
+        {
+          "value": 2,
+          "label": "Developing"
+        },
+        {
+          "value": 3,
+          "label": "Clear"
+        },
+        {
+          "value": 4,
+          "label": "Strong and verified"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "emotional_capacity_match",
+      "education_health_match",
+      "identity_culture_match",
+      "long_term_commitment"
+    ],
+    "t_score": false
+  }
+}

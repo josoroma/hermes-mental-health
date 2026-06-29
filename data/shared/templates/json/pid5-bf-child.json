@@ -1,0 +1,24 @@
+{
+  "slug": "pid5-bf-child",
+  "title": "The Personality Inventory for DSM-5—Brief Form (PID-5-BF)—Child Age 11–17",
+  "description": "Name: _______________________ Age: ____ Date:_____________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "domain_bars",
+  "fields": [
+    {
+      "id": "response",
+      "label": "The Personality Inventory for DSM-5—Brief Form (PID-5-BF)—Child Age 11–17",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

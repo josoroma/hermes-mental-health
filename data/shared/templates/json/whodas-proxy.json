@@ -1,0 +1,918 @@
+{
+  "slug": "whodas-proxy",
+  "title": "WHODAS 2.0",
+  "description": "World Health Organization Disability Assessment Schedule 2.0",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "domain_bars",
+  "fields": [
+    {
+      "id": "d1_1",
+      "label": "Concentrating on doing something for ten",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d1_3",
+      "label": "Analyzing and finding solutions to problems in",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d1_4",
+      "label": "Learning a new task, for example, learning how",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d1_5",
+      "label": "Generally understanding what people say?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d1_6",
+      "label": "Starting and maintaining a conversation?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d2_1",
+      "label": "Standing for long periods, such as 30 minutes?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d2_3",
+      "label": "Moving around inside their home?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d2_4",
+      "label": "Getting out of their home?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d2_5",
+      "label": "Walking a long distance, such as a kilometer (or",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d3_1",
+      "label": "Washing his or her whole body?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d3_3",
+      "label": "Eating?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d3_4",
+      "label": "Staying by himself or herself for a few days?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d4_1",
+      "label": "Dealing with people he or she does not know?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d4_3",
+      "label": "Getting along with people who are close to him or",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d4_4",
+      "label": "Making new friends?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d4_5",
+      "label": "Sexual activities?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d5_1",
+      "label": "Taking care of his or her household",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d5_3",
+      "label": "Getting all the household work done that is",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d5_4",
+      "label": "Getting the household work done as quickly as",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d5_5",
+      "label": "His or her day-to-day work/school?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d5_7",
+      "label": "Getting all of the work done that is needed?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d5_8",
+      "label": "Getting all the work done as quickly as needed?",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d6_1",
+      "label": "How much of a problem did your relative have in",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d6_3",
+      "label": "How much of a problem did your relative have",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d6_4",
+      "label": "How much time did your relative spend on his or",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d6_5",
+      "label": "How much has your relative been emotionally",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d6_6",
+      "label": "How much has his or her health been a drain on",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d6_7",
+      "label": "How much of a problem did you or the rest of his",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    },
+    {
+      "id": "d6_8",
+      "label": "How much of a problem did your relative have in",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "None"
+        },
+        {
+          "value": 2,
+          "label": "Mild"
+        },
+        {
+          "value": 3,
+          "label": "Moderate"
+        },
+        {
+          "value": 4,
+          "label": "Severe"
+        },
+        {
+          "value": 5,
+          "label": "Extreme/Cannot do"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "d1_1",
+      "d1_3",
+      "d1_4",
+      "d1_5",
+      "d1_6",
+      "d2_1",
+      "d2_3",
+      "d2_4",
+      "d2_5",
+      "d3_1",
+      "d3_3",
+      "d3_4",
+      "d4_1",
+      "d4_3",
+      "d4_4",
+      "d4_5",
+      "d5_1",
+      "d5_3",
+      "d5_4",
+      "d5_5",
+      "d5_7",
+      "d5_8",
+      "d6_1",
+      "d6_3",
+      "d6_4",
+      "d6_5",
+      "d6_6",
+      "d6_7",
+      "d6_8"
+    ],
+    "t_score": false
+  }
+}

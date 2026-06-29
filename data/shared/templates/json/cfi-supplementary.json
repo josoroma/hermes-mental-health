@@ -1,0 +1,786 @@
+{
+  "slug": "cfi-supplementary",
+  "title": "Supplementary Modules to the Core Cultural Formulation Interview (CFI)",
+  "description": "Guidelines for Implementing the CFI Supplementary Modules",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "none",
+  "fields": [
+    {
+      "id": "question_1",
+      "label": "*Can you tell me more about how you understand your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "What did you know about your [PROBLEM] before it affected you?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "Had you ever had anything like your [PROBLEM] before?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "Do you know anyone else, or heard of anyone else, with this [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_6",
+      "label": "*Can you tell me what you think caused your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Have your ideas about the cause of the [PROBLEM] changed?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_8",
+      "label": "*What do people in your family, friends, or others in your community think caused the [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_9",
+      "label": "How do you think your [PROBLEM] affects your body?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_10",
+      "label": "What usually happens to people who have this [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_11",
+      "label": "Do you consider your [PROBLEM] to be serious?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "How concerned are other people in your family, friends or community about your having this [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_13",
+      "label": "What do you think is the best way to deal with this kind of problem?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "How has your [PROBLEM] affected your ability to interact with your family and other people in your life?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "How has your [PROBLEM] affected your ability to work?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "How has your [PROBLEM] affected your financial situation?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_5",
+      "label": "How has your [PROBLEM] affected your ability to take part in community and social activities?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_6",
+      "label": "How has your [PROBLEM] affected your ability to enjoy everyday life?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Which of these concerns are most troubling to you?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_8",
+      "label": "Which of these concerns are most troubling to your family and to other people in your life?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "Who are the most important people in your life at present?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "Is there anyone in particular whom you trust and can talk with about your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "Which of your family members, friends, or other important people in your life know about your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "What ideas do your family and friends have about the nature of your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_5",
+      "label": "Are there people who do not know about your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_6",
+      "label": "What advice have family members and friends given you about your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Do your family, friends, and other people in your life treat you differently because of your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_10",
+      "label": "What kinds of help or support were you expecting from family or friends?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "Have any family members or friends helped you get treatment for your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_13",
+      "label": "What would your family and friends think about your coming here to receive treatment?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_14",
+      "label": "Would you like your family, friends, or others to be part of your treatment?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_15",
+      "label": "How would involving family or friends make a difference in your treatment?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "How are the people around you affected by these [STRESSORS]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "How do you cope with these [STRESSORS]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "What have other people suggested about coping with these [STRESSORS]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_5",
+      "label": "What else could be done about these [STRESSORS]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Have you experienced discrimination or been treated badly as a result of your background or identity?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "Do you identify with any particular spiritual, religious or moral tradition?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "Do you belong to a congregation or community associated with that tradition?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "What are the spiritual, religious or moral tradition backgrounds of your family members?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_16",
+      "label": "Have you been in conflict with others over spiritual, religious or moral issues?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "Where were you born?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "Where were your parents and grandparents born?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "How would you describe your family’s national, ethnic, and/or racial background?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "In terms of your background, how do you usually describe yourself to people outside your community?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_5",
+      "label": "Which part of your background do you feel closest to?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_8",
+      "label": "What languages do you speak fluently?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_9",
+      "label": "What languages did you speak growing up?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_10",
+      "label": "What languages are spoken at home?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_11",
+      "label": "What languages do you use at work or school?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "What language would you prefer to use in getting health care?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_13",
+      "label": "What languages do you read?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_14",
+      "label": "When did you come to this country?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_15",
+      "label": "What made you decide to leave your country of origin?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_16",
+      "label": "How has your life changed since coming here?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_17",
+      "label": "What do you miss about the place or community you came from?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_20",
+      "label": "How has migration influenced your health or that of your family?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_23",
+      "label": "Do you identify with any particular religious, moral or spiritual tradition?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_25",
+      "label": "Do your family members share your spiritual, religious or moral traditions?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_26",
+      "label": "Do you feel that your [GENDER] has influenced your [PROBLEM] or your health more generally?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_27",
+      "label": "Do you feel that your [GENDER] has influenced your ability to get the kind of health care you need?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_30",
+      "label": "Do you feel that your sexual orientation has influenced your [PROBLEM] or your health more generally?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_34",
+      "label": "What are the most important aspects of your background or identity in relation to [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "*Can you tell me more about how you are trying to cope with [PROBLEM] at this time?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "*Can you tell me more about how you tried to cope with the [PROBLEM] or with similar problems in the past?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_6",
+      "label": "*Have you told a family member about your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "*Have you told a friend or co-worker about your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_8",
+      "label": "Are you involved in activities that involve other people related to a spiritual, religious or moral tradition?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_9",
+      "label": "Have you ever tried to get help for your [PROBLEM] from your general doctor?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "What were the circumstances that led to your coming here for treatment for your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_13",
+      "label": "What help are you hoping to get here [at this clinic] for your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "What kind of experiences have you had with clinicians in the past?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "Have you had difficulties with clinicians in the past?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "How did you feel about your relationship with the patient?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "What was the quality of communication with the patient?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Are there aspects of your own identity that may influence your attitudes toward this patient?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "Do you feel you are like other children/youth your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "Do you sometimes feel different from other children/youth your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "Do you feel your family is different from other families?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_5",
+      "label": "Do you use different languages?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_6",
+      "label": "Does your name have any special meaning for you?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Is there something special about you that you like or that you are proud of?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_8",
+      "label": "What do you like about being a child/youth at home?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_9",
+      "label": "What don’t you like about being a child/youth at home?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_10",
+      "label": "Who is there to support you when you feel you need it?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_11",
+      "label": "What do your parents or grandparents expect from a child/youth your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "What do your school teachers expect from a child/youth your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_13",
+      "label": "*IF INDIVIDUAL HAS SIBLINGS* : What do your siblings expect from a child/youth your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_14",
+      "label": "What do other children/youth your age expect from a child/youth your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_16",
+      "label": "When is a youth considered ready to become an adult in your family or community?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_17",
+      "label": "When is a youth considered ready to become an adult according to your school teachers?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_18",
+      "label": "What is good or difficult about becoming a young woman or a young man in your family?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_19",
+      "label": "How do you feel about “growing up” or becoming an adult?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_20",
+      "label": "In what ways are your life and responsibilities different from the life and responsibilities of your parents?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "How would you describe a person of your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "How does your experience of aging compare to that of your friends and relatives who are of a similar age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "Is there anything about being your age that helps you cope with your current life situation?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "How does being older influence your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_5",
+      "label": "Are there ways that being older influences how you deal with your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_6",
+      "label": "Have you had health problems due to your age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "How have your health conditions or the treatments for your health conditions affected your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_8",
+      "label": "Are there any ways that your health conditions or treatments influence how you deal with your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_9",
+      "label": "Are there things that are important to you that you are unable to do because of your health or age?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_10",
+      "label": "Who do you rely on for help or support in your daily life in general?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_11",
+      "label": "How has [PROBLEM] affected your relationships with family and friends?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "Are you receiving the amount and kind of support you expected?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_13",
+      "label": "Do the people you rely on share your view of your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_15",
+      "label": "How has your age affected how health providers treat you?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "What is your country of origin?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "How long have you been living here in __________ (HOST COUNTRY)?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "When and with whom did you leave _____________ (COUNTRY OF ORIGIN)?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "Why did you leave ___________ (COUNTRY OF ORIGIN)?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Of the persons important/close to you, who stayed behind?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_10",
+      "label": "Do you or your family miss anything about your way of life in (COUNTRY OF ORIGIN)?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_11",
+      "label": "Do you have concerns about relatives that remain in (COUNTRY OF ORIGIN)?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "Do relatives in (COUNTRY OF ORIGIN) have any expectations of you?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_15",
+      "label": "Has coming to [HOST COUNTRY] resulted in something positive for you or your family?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_18",
+      "label": "What hopes and plans do you have for you and your family in the coming years?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_1",
+      "label": "How long have you been taking care of [INDIVIDUAL RECEIVING CARE]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_2",
+      "label": "How are you connected to [INDIVIDUAL RECEIVING CARE]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_3",
+      "label": "How do you help him/her with the [PROBLEM] or with day-to-day activities?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_4",
+      "label": "What is most rewarding about helping him/her?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_5",
+      "label": "What is most challenging about helping him/her?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_6",
+      "label": "How, if at all, has his/her [PROBLEM] changed your relationship?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_7",
+      "label": "Are there any cultural traditions that influence how you approach helping [INDIVIDUAL RECEIVING CARE]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_9",
+      "label": "[ *IF CAREGIVER IS A FAMILY MEMBER:* ] How do you, as a family, cope with this [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_11",
+      "label": "How do you feel about how much or how little others are helping with his/her [PROBLEM]?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_12",
+      "label": "How do you see yourself helping to provide care to [INDIVIDUAL RECEIVING CARE] now and in the future?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "question_13",
+      "label": "[ *IF UNCLEAR* :] How do you see yourself helping with the care that he/she receives in this clinic?",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

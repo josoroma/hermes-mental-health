@@ -1,0 +1,8 @@
+{
+  "id": "{{PATIENT_ID}}",
+  "name": "{{PATIENT_NAME}}",
+  "ageRange": "{{AGE_RANGE}}",
+  "gender": "{{GENDER}}",
+  "createdAt": "{{CREATED_AT}}",
+  "updatedAt": "{{CREATED_AT}}"
+}

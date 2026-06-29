@@ -1,0 +1,32 @@
+{
+  "resultId": "result-1782700000003-demo3",
+  "inviteToken": "demo-l1-baseline-token-32charxxx3",
+  "patientId": "josoroma-mqn4h6m8",
+  "assessmentSlug": "level1-adult",
+  "scoring": {
+    "assessmentSlug": "level1-adult",
+    "patientId": "josoroma-mqn4h6m8",
+    "total": 28,
+    "average": 2.15,
+    "tScore": null,
+    "severity": "moderate",
+    "dataQualityFlags": []
+  },
+  "answers": {
+    "item_1": 3,
+    "item_2": 2,
+    "item_3": 2,
+    "item_4": 1,
+    "item_5": 2,
+    "item_6": 3,
+    "item_7": 2,
+    "item_8": 1,
+    "item_9": 3,
+    "item_10": 1,
+    "item_11": 3,
+    "item_12": 2,
+    "item_13": 3
+  },
+  "createdAt": "2026-06-28T14:10:00.000Z",
+  "resultChart": "domain_bars"
+}

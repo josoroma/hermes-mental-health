@@ -1,0 +1,3 @@
+Mental health practitioner. Prefers concise direct responses — short commands: 'fix', 'delete X', 'do X'. Code over chat. Dark mode mandatory, file-system-backed data only (JSON/MD on disk, never localStorage). Screenshot+fix: attaches images expecting autonomous diagnosis. Single commits, minimal repos, GitHub Pages for tutorials (never expose project code).
+§
+All .hermes files, skill documentation, chat responses, and clinical content must be in English. Never use Spanish in any output.

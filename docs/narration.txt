@@ -1,0 +1,23 @@
+Welcome to Hermes Mental Health, a practitioner dashboard for DSM-5-TR assessment management.
+
+The dashboard shows all patients with their clinical context and consent status. You can create new patients, browse the assessment library with 68 DSM-5-TR measures and custom AI-generated assessments, or use the Create With AI feature to generate new assessment templates via the Hermes agent.
+
+Clicking a patient row opens their profile. The gradient header shows demographics with inline editing. Below that, the Care Plan card shows treatment goals, interventions, follow-up schedules, discharge criteria, and risk mitigation — all editable with AI generation support.
+
+Scrolling down reveals the Clinical Summary, synthesizing recent assessment results, and the Clinical Background documenting the patient's history, medications, and mental status examination. The Consent card at the bottom tracks consent status.
+
+The Assessments page manages the invite lifecycle. Create a new invite by selecting a measure from the 68-measure catalog. Each pending invite shows a unique link for the patient to complete the assessment. Completed assessments appear in the collapsible Taken Assessments log with links to their results.
+
+The Results page lists all scored assessments by date, showing measure names, scores, and severity badges. The delete button moves results to a deleted folder — nothing is ever truly erased.
+
+Opening a result shows the detail view. At the top, the chart renders automatically based on the measure type. Domain bars show symptom domains for cross-cutting measures. T-score gauges display PROMIS standardized scores. Below the chart, the scores card shows the total, average, and severity with any data quality flags. The answers section breaks down each item response.
+
+Clicking Edit toggles inline editing. Each field renders as its native input type — radio buttons for scales, text areas for free text, dropdowns for selects. Saving re-scores through the engine and updates the chart immediately.
+
+The Sessions page lists clinical session notes. Each session documents the opening check-in, mental status exam, symptom review, safety screening, interventions delivered, and patient response. The Edit link opens the full MDX editor with a rich formatting toolbar for markdown editing. The Notes page works the same way for general clinical notes not tied to a specific session.
+
+The Agent Chat provides AI assistance with context-aware quick-inject buttons. The Care Plan button triggers an audit of existing care plans against assessment results. The Session Note button reviews clinical notes for symptom trajectory and treatment response. The Progress Report button generates weekly summaries with trends. The Safety Check button screens for suicide risk and crisis-level scores.
+
+The Assessment Editor lets you configure measure metadata, field definitions, scoring rules, and chart types. Switch between the Metadata, Fields, Scoring, and Chart tabs to customize any measure in the catalog.
+
+Hermes Mental Health combines a file-backed data layer, dark-mode shadcn UI, and AI-powered clinical workflows into a single practitioner dashboard. All patient data lives in JSON and Markdown files on disk — no database required.

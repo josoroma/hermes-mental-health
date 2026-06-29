@@ -1,0 +1,24 @@
+{
+  "slug": "edhb-clinician",
+  "title": "Early Development and Home Background (EDHB) Form—Clinician",
+  "description": "(This form is to be completed if this is your FIRST encounter with the child receiving care)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "none",
+  "fields": [
+    {
+      "id": "response",
+      "label": "Early Development and Home Background (EDHB) Form—Clinician",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

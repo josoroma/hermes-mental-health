@@ -1,0 +1,4 @@
+name: mental-health-results
+entrypoint: SKILL.md
+files:
+  - SKILL.md

@@ -1,0 +1,160 @@
+{
+  "slug": "adoption-family-readiness",
+  "title": "Adoption Family Readiness Assessment",
+  "description": "Evaluates preparation, stability, support, and child-centered readiness for adoption.",
+  "version": "1.0.0",
+  "instructions": "Use as a structured preparation tool. It does not replace legal, psychological, or social-work evaluation.",
+  "resultChart": "area_chart",
+  "fields": [
+    {
+      "id": "motivation_child_centered",
+      "label": "Child-centered motivation",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Unclear or adult-centered"
+        },
+        {
+          "value": 1,
+          "label": "Mostly adult-centered"
+        },
+        {
+          "value": 2,
+          "label": "Mixed motivation"
+        },
+        {
+          "value": 3,
+          "label": "Mostly child-centered"
+        },
+        {
+          "value": 4,
+          "label": "Clearly child-centered"
+        }
+      ]
+    },
+    {
+      "id": "home_stability",
+      "label": "Home stability",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Unstable"
+        },
+        {
+          "value": 1,
+          "label": "Major concerns"
+        },
+        {
+          "value": 2,
+          "label": "Some concerns"
+        },
+        {
+          "value": 3,
+          "label": "Mostly stable"
+        },
+        {
+          "value": 4,
+          "label": "Stable and supportive"
+        }
+      ]
+    },
+    {
+      "id": "trauma_informed_readiness",
+      "label": "Trauma-informed parenting readiness",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No awareness"
+        },
+        {
+          "value": 1,
+          "label": "Limited awareness"
+        },
+        {
+          "value": 2,
+          "label": "Basic awareness"
+        },
+        {
+          "value": 3,
+          "label": "Good readiness"
+        },
+        {
+          "value": 4,
+          "label": "Strong readiness with training"
+        }
+      ]
+    },
+    {
+      "id": "support_system",
+      "label": "Support system for adoptive family",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None"
+        },
+        {
+          "value": 1,
+          "label": "Weak"
+        },
+        {
+          "value": 2,
+          "label": "Basic"
+        },
+        {
+          "value": 3,
+          "label": "Reliable"
+        },
+        {
+          "value": 4,
+          "label": "Strong and committed"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "motivation_child_centered",
+      "home_stability",
+      "trauma_informed_readiness",
+      "support_system"
+    ],
+    "t_score": false
+  }
+}

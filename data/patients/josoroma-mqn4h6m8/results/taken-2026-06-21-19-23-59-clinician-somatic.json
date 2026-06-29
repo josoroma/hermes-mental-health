@@ -1,0 +1,20 @@
+{
+  "resultId": "result-1782091439009-vq2a5u",
+  "inviteToken": "726df10c602d43a3a26bc38f6a64d440",
+  "patientId": "josoroma-mqn4h6m8",
+  "assessmentSlug": "clinician-somatic",
+  "scoring": {
+    "assessmentSlug": "clinician-somatic",
+    "patientId": "josoroma-mqn4h6m8",
+    "total": 4,
+    "average": 4,
+    "tScore": null,
+    "severity": "severe",
+    "dataQualityFlags": []
+  },
+  "answers": {
+    "rating": 4
+  },
+  "createdAt": "2026-06-22T01:23:59.009Z",
+  "resultChart": "severity_bar"
+}

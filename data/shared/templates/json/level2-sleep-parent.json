@@ -1,0 +1,24 @@
+{
+  "slug": "level2-sleep-parent",
+  "title": "LEVEL 2—Sleep Disturbance—Parent/Guardian of Child Age 6-17",
+  "description": "PROMIS—Sleep Disturbance—Short Form",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "response",
+      "label": "LEVEL 2—Sleep Disturbance—Parent/Guardian of Child Age 6-17",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "t_score",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": true
+  }
+}

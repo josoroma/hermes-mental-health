@@ -1,0 +1,27 @@
+{
+  "resultId": "result-1782700000004-demo4",
+  "inviteToken": "demo-dep-followup-token-32charxxx4",
+  "patientId": "josoroma-mqn4h6m8",
+  "assessmentSlug": "level2-depression-adult",
+  "scoring": {
+    "assessmentSlug": "level2-depression-adult",
+    "patientId": "josoroma-mqn4h6m8",
+    "total": 24,
+    "average": 3.0,
+    "tScore": 60,
+    "severity": "moderate",
+    "dataQualityFlags": []
+  },
+  "answers": {
+    "item_1": 3,
+    "item_2": 3,
+    "item_3": 3,
+    "item_4": 4,
+    "item_5": 2,
+    "item_6": 3,
+    "item_7": 3,
+    "item_8": 3
+  },
+  "createdAt": "2026-07-12T10:00:00.000Z",
+  "resultChart": "t_score_gauge"
+}

@@ -1,0 +1,422 @@
+{
+  "slug": "level2-anxiety-child",
+  "title": "LEVEL 2—Anxiety—Child Age 11–17",
+  "description": "PROMIS Emotional Distress—Anxiety—Pediatric Item Bank",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "I felt like something awful might happen.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "I felt nervous.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "I felt scared.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "I felt worried.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "I worried about what could happen to me.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "I worried when I went to bed at night.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "I got scared really easy.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "I was afraid of going to school.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "I was worried I might die.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_10",
+      "label": "I woke up at night scared.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_11",
+      "label": "I worried when I was at home.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_12",
+      "label": "I worried when I was away from home.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_13",
+      "label": "It was hard for me to relax.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "t_score",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8",
+      "item_9",
+      "item_10",
+      "item_11",
+      "item_12",
+      "item_13"
+    ],
+    "t_score": true
+  }
+}

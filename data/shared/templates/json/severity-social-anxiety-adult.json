@@ -1,0 +1,329 @@
+{
+  "slug": "severity-social-anxiety-adult",
+  "title": "Severity Measure for Social Anxiety Disorder (Social Phobia)—Adult",
+  "description": "Name: ____________________________________ Age: ______ Date: _________________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "felt moments of sudden terror, fear, or fright in social situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "felt anxious, worried, or nervous about social situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "had thoughts of being rejected, humiliated, embarrassed, ridiculed, or offending others",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "felt a racing heart, sweaty, trouble breathing, faint, or shaky in social situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "felt tense muscles, felt on edge or restless, or had trouble relaxing in social situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "avoided, or did not approach or enter, social situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "left social situations early or participated only minimally (e.g., said little, avoided eye contact)",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "spent a lot of time preparing what to say or how to act in social situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "distracted myself to avoid thinking about social situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_10",
+      "label": "needed help to cope with social situations (e.g., alcohol or medications, superstitious objects)",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8",
+      "item_9",
+      "item_10"
+    ],
+    "t_score": false
+  }
+}

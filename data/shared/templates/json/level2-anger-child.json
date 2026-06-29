@@ -1,0 +1,205 @@
+{
+  "slug": "level2-anger-child",
+  "title": "LEVEL 2—Anger—Child Age 11–17",
+  "description": "PROMIS Emotional Distress—Calibrated Anger Measure—Pediatric",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "I felt mad.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "I was so angry I felt like throwing something.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "I was so angry I felt like yelling at somebody.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "When I got mad, I stayed mad.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "I felt fed up.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "I felt upset.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "t_score",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6"
+    ],
+    "t_score": true
+  }
+}

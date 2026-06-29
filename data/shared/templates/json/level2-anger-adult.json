@@ -1,0 +1,174 @@
+{
+  "slug": "level2-anger-adult",
+  "title": "LEVEL 2—Anger—Adult",
+  "description": "PROMIS Emotional Distress—Anger—Short Form",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "I was irritated more than people knew.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "I felt angry.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "I felt like I was ready to explode.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "I was grouchy.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "I felt annoyed.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "t_score",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5"
+    ],
+    "t_score": true
+  }
+}

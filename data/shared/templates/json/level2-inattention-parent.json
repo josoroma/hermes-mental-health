@@ -1,0 +1,235 @@
+{
+  "slug": "level2-inattention-parent",
+  "title": "LEVEL 2—Inattention—Parent/Guardian of Child Age 6–17",
+  "description": "* Swanson , Nolan, and Pelham, version IV (SNAP-IV)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "Often fails to give close attention to details or makes careless mistakes in schoolwork, work, or other activities.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "Often has difficulty sustaining attention in tasks or play activities.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "Often does not seem to listen when spoken to directly.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "Often does not follow through on instructions and fails to finish schoolwork, chores, or duties.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "Often has difficulty organizing tasks and activities.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "Often avoids, dislikes, or is reluctant to engage in tasks that require sustained mental effort (e.g., schoolwork or homework).",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "Often loses things necessary for tasks or activities (e.g., toys, school assignments, pencils, books, or tools.)",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "Often is distracted by extraneous stimuli.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8"
+    ],
+    "t_score": false
+  }
+}

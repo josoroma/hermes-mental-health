@@ -1,0 +1,283 @@
+{
+  "slug": "severity-depression-adult",
+  "title": "Severity Measure for Depression—Adult",
+  "description": "Adapted from the Patient Health Questionnaire–9 (PHQ-9)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "Little interest or pleasure in doing things",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "Feeling down, depressed, or hopeless",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "Trouble falling or staying asleep, or sleeping too much",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "Feeling tired or having little energy",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "Poor appetite or overeating",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "Feeling bad about yourself—or that you are a failure or have let yourself or your family down",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "Moving or speaking so slowly that other people could have noticed?   Or the opposite—being so fidgety or restless that you have been moving around a lot more than usual",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "Thoughts that you would be better off dead or of hurting yourself in some way",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 3,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 3,
+    "t_score": false,
+    "severityThresholds": {
+      "none": [
+        0,
+        4
+      ],
+      "mild": [
+        5,
+        9
+      ],
+      "moderate": [
+        10,
+        14
+      ],
+      "moderately_severe": [
+        15,
+        19
+      ],
+      "severe": [
+        20,
+        27
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8",
+      "item_9"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "slug": "church-divorce-care-needs",
+  "title": "Divorce Care Needs Assessment",
+  "description": "Identifies pastoral, emotional, practical, family, and community support needs during divorce.",
+  "version": "1.0.0",
+  "instructions": "Use compassionately and avoid blame. This is a support planning tool, not a moral judgment tool.",
+  "resultChart": "pie_chart",
+  "fields": [
+    {
+      "id": "emotional_support_need",
+      "label": "Need for emotional support",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    },
+    {
+      "id": "parenting_support_need",
+      "label": "Need for parenting or co-parenting support",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    },
+    {
+      "id": "practical_support_need",
+      "label": "Need for practical support",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    },
+    {
+      "id": "spiritual_support_need",
+      "label": "Need for spiritual support",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        3
+      ],
+      "mild": [
+        4,
+        7
+      ],
+      "moderate": [
+        8,
+        11
+      ],
+      "moderately_severe": [
+        12,
+        16
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "emotional_support_need",
+      "parenting_support_need",
+      "practical_support_need",
+      "spiritual_support_need"
+    ],
+    "t_score": false
+  }
+}

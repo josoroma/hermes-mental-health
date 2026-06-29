@@ -1,0 +1,4 @@
+name: mental-health-patient-summary
+entrypoint: SKILL.md
+files:
+  - SKILL.md

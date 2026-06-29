@@ -1,0 +1,160 @@
+{
+  "slug": "family-adoption-flow-review",
+  "title": "Adoption Process Flow Review",
+  "description": "Tracks readiness flow from inquiry to training, home study, matching, placement, and post-placement support.",
+  "version": "1.0.0",
+  "instructions": "Designed for program dashboards that visualize where families need more support in the adoption journey.",
+  "resultChart": "sunburst_chart",
+  "fields": [
+    {
+      "id": "inquiry_clarity",
+      "label": "Clarity at inquiry stage",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Very unclear"
+        },
+        {
+          "value": 1,
+          "label": "Mostly unclear"
+        },
+        {
+          "value": 2,
+          "label": "Partly clear"
+        },
+        {
+          "value": 3,
+          "label": "Mostly clear"
+        },
+        {
+          "value": 4,
+          "label": "Very clear"
+        }
+      ]
+    },
+    {
+      "id": "training_completion",
+      "label": "Training completion and comprehension",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not started"
+        },
+        {
+          "value": 1,
+          "label": "Started but incomplete"
+        },
+        {
+          "value": 2,
+          "label": "Partially complete"
+        },
+        {
+          "value": 3,
+          "label": "Complete"
+        },
+        {
+          "value": 4,
+          "label": "Complete with strong comprehension"
+        }
+      ]
+    },
+    {
+      "id": "home_study_progress",
+      "label": "Home study progress",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not started"
+        },
+        {
+          "value": 1,
+          "label": "Major gaps"
+        },
+        {
+          "value": 2,
+          "label": "In progress"
+        },
+        {
+          "value": 3,
+          "label": "Nearly complete"
+        },
+        {
+          "value": 4,
+          "label": "Complete and reviewed"
+        }
+      ]
+    },
+    {
+      "id": "post_placement_plan",
+      "label": "Post-placement plan quality",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No plan"
+        },
+        {
+          "value": 1,
+          "label": "Weak plan"
+        },
+        {
+          "value": 2,
+          "label": "Basic plan"
+        },
+        {
+          "value": 3,
+          "label": "Clear plan"
+        },
+        {
+          "value": 4,
+          "label": "Strong coordinated plan"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "inquiry_clarity",
+      "training_completion",
+      "home_study_progress",
+      "post_placement_plan"
+    ],
+    "t_score": false
+  }
+}

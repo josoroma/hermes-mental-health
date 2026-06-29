@@ -1,0 +1,435 @@
+{
+  "slug": "level1-adult",
+  "title": "DSM-5-TR Self-Rated Level 1 Cross-Cutting Symptom Measure—Adult",
+  "description": "Name: ___________________________ Age: ____ Date:________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "domain_bars",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "Little interest or pleasure in doing things?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Depression",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "Feeling more irritated, grouchy, or angry than usual?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Anger",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "Sleeping less than usual, but still have a lot of energy?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Mania",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "Feeling nervous, anxious, frightened, worried, or on edge?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Anxiety",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "Unexplained aches and pains (e.g., head, back, joints, abdomen, legs)?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Somatic Symptoms",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_11",
+      "label": "Thoughts of actually hurting yourself?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Suicidal Ideation",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_12",
+      "label": "Hearing things other people couldn’t hear, such as voices even when no one was around?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Psychosis",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_14",
+      "label": "Problems with sleep that affected your sleep quality over all?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Sleep Problems",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_15",
+      "label": "Problems with memory (e.g., learning new information) or with location (e.g., finding your way home)?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Memory",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_16",
+      "label": "Unpleasant thoughts, urges, or images that repeatedly enter your mind?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Repetitive Thoughts and Behaviors",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_18",
+      "label": "Feeling detached or distant from yourself, your body, your physical surroundings, or your memories?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Dissociation",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_19",
+      "label": "Not knowing who you really are or what you want out of life?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Personality Functioning",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_21",
+      "label": "Drinking at least 4 drinks of any kind of alcohol in a single day?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Substance Use",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "domain_max",
+    "maxScale": 4,
+    "t_score": false,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_3",
+      "item_4",
+      "item_6",
+      "item_9",
+      "item_11",
+      "item_12",
+      "item_14",
+      "item_15",
+      "item_16",
+      "item_18",
+      "item_19",
+      "item_21"
+    ]
+  }
+}

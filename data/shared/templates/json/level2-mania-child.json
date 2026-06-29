@@ -1,0 +1,24 @@
+{
+  "slug": "level2-mania-child",
+  "title": "LEVEL 2—Mania—Child Age 11–17",
+  "description": "* Altman Self-Rating Mania Scale (ASRM)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "response",
+      "label": "LEVEL 2—Mania—Child Age 11–17",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

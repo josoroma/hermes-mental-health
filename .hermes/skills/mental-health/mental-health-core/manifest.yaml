@@ -1,0 +1,7 @@
+name: mental-health-core
+entrypoint: SKILL.md
+files:
+  - SKILL.md
+  - references/scoring-guide.md
+  - references/severity-bands.md
+  - references/field-types.md

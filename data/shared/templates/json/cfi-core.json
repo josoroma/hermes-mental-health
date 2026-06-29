@@ -1,0 +1,24 @@
+{
+  "slug": "cfi-core",
+  "title": "Cfi Core",
+  "description": "Page 1 of 3 Cultural Formulation Interview (CFI)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "none",
+  "fields": [
+    {
+      "id": "narrative",
+      "label": "Clinical interview notes",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

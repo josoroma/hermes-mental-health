@@ -1,0 +1,114 @@
+# ── Python ──
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# ── Node / Next.js ──
+node_modules/
+.next/
+out/
+
+# ── Models (downloaded GGUF) ──
+models/
+model/
+
+# ── IDE / Editor ──
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ═══════════════════════════════════════════════════════
+#  .hermes — Mental Health runtime
+#  KEEP: skills, plugins, hooks, commands, agents, bundles, config, skins, docs
+#  IGNORE: secrets, caches, state, sessions, logs, runtime artifacts
+# ═══════════════════════════════════════════════════════
+
+.env
+
+# ── Secrets & auth ──
+.hermes/.env
+.hermes/auth.json
+.hermes/auth.lock
+
+# ── Runtime state & caches ──
+.hermes/.clean_shutdown
+.hermes/.hermes_history
+.hermes/.skills_prompt_snapshot.json
+.hermes/.update_check
+.hermes/desktop-build-stamp.json
+.hermes/gateway_state.json
+.hermes/kanban.db
+.hermes/kanban.db-*
+.hermes/kanban.db.init.lock
+.hermes/models_dev_cache.json
+.hermes/ollama_cloud_models_cache.json
+.hermes/processes.json
+.hermes/provider_models_cache.json
+.hermes/state.db
+.hermes/state.db-*
+
+# ── Directories: caches, logs, sessions, sandboxes ──
+.hermes/audio_cache/
+.hermes/cache/
+.hermes/cron/.tick.lock
+.hermes/cron/output/
+.hermes/image_cache/
+.hermes/lsp/bin/
+.hermes/lsp/node_modules/
+.hermes/logs/
+.hermes/pairing/
+.hermes/pastes/
+.hermes/sandboxes/
+.hermes/sessions/
+.hermes/spawn-trees/
+.hermes/state-recovery-*/
+.hermes/state-snapshots/
+
+# ── Memory locks ──
+.hermes/memories/*.lock
+
+# ── Skills: ONLY keep mental-health; ignore hub, bundled, usage ──
+.hermes/skills/*
+!.hermes/skills/mental-health/
+!.hermes/skills/mental-health/**
+.hermes/skills/.bundled_manifest
+.hermes/skills/.curator_state
+.hermes/skills/.hub/
+.hermes/skills/.usage.json
+.hermes/skills/.usage.json.lock
+
+# ── Desktop build stamp ──
+.hermes/desktop-build-stamp.json
+
+# ═══════════════════════════════════════════════════════
+#  Hermes Mental Health — Tracked folders/files
+#  These are explicitly NOT ignored:
+#    data/               — patient records, corpus, templates
+#    docs/               — documentation, screenshots, video
+#    README.md           — project readme
+#    SOUL.md             — project identity
+#    CLAUDE.md           — Claude Code context
+#    AGENTS.md           — agent operating instructions
+#    SPECS.md            — feature specifications
+#    Makefile            — build system
+#    .hermes/skills/mental-health/  — clinical AI skills
+#    .hermes/plugins/    — mental health plugin
+#    .hermes/hooks/      — patient scope + privacy hooks
+#    .hermes/agents/     — agent definitions
+#    .hermes/commands/   — slash commands
+#    .hermes/skill-bundles/  — skill bundles
+#    .hermes/config.yaml — Hermes configuration
+#    .hermes/skins/      — UI themes
+#    app/                — Next.js application
+#    components/         — shared UI components
+#    lib/                — shared libraries
+#    scripts/            — corpus pipeline
+#    public/             — static assets
+# ═══════════════════════════════════════════════════════

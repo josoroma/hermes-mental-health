@@ -1,0 +1,8 @@
+{
+  "token": "demo-pending-form-token-abcdef12",
+  "patientId": "josoroma-mqn4h6m8",
+  "status": "pending",
+  "createdAt": "2026-06-28T23:00:00.000Z",
+  "expiresAt": null,
+  "measureSlug": "level2-depression-adult"
+}

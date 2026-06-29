@@ -1,0 +1,4 @@
+name: mental-health-corpus
+entrypoint: SKILL.md
+files:
+  - SKILL.md

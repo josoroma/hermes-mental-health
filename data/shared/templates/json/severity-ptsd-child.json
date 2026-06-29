@@ -1,0 +1,298 @@
+{
+  "slug": "severity-ptsd-child",
+  "title": "Severity of Posttraumatic Stress Symptoms—Child Age 11–17",
+  "description": "National Stressful Events Survey PTSD Short Scale (NSESSS)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "Having “flashbacks,” that is, you suddenly acted or felt as if a stressful experience from the past was happening all over again (for example, you reexperienced parts of a stressful experience by seei",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "Feeling very emotionally upset when something reminded you of a stressful experience?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "Trying to avoid thoughts, feelings, or physical sensations that reminded you of a stressful experience?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "Thinking that a stressful event happened because you or someone else (who didn’t directly harm you) did something wrong or didn’t do everything possible to prevent it, or because of something about yo",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "Having a very negative emotional state (for example, you were experiencing lots of fear, anger, guilt, shame, or horror) after a stressful experience?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "Losing interest in activities you used to enjoy before having a stressful experience?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "Being “super alert,” on guard, or constantly on the lookout for danger?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "Feeling jumpy or easily startled when you hear an unexpected noise?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "Being extremely irritable or angry to the point where you yelled at other people, got into fights, or destroyed things?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8",
+      "item_9"
+    ],
+    "t_score": false
+  }
+}

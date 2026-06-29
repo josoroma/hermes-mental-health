@@ -1,0 +1,160 @@
+{
+  "slug": "adoption-post-placement-support",
+  "title": "Post-Placement Adoption Support Needs",
+  "description": "Identifies support needs after placement for child, caregivers, school, community, and professionals.",
+  "version": "1.0.0",
+  "instructions": "Use periodically after placement to coordinate services and reduce family isolation.",
+  "resultChart": "funnel_chart",
+  "fields": [
+    {
+      "id": "child_adjustment_support",
+      "label": "Child adjustment support need",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    },
+    {
+      "id": "caregiver_support",
+      "label": "Caregiver support need",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    },
+    {
+      "id": "school_support",
+      "label": "School or learning support need",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    },
+    {
+      "id": "professional_followup",
+      "label": "Professional follow-up need",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No current need"
+        },
+        {
+          "value": 1,
+          "label": "Mild need"
+        },
+        {
+          "value": 2,
+          "label": "Moderate need"
+        },
+        {
+          "value": 3,
+          "label": "High need"
+        },
+        {
+          "value": 4,
+          "label": "Urgent need"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        3
+      ],
+      "mild": [
+        4,
+        7
+      ],
+      "moderate": [
+        8,
+        11
+      ],
+      "moderately_severe": [
+        12,
+        16
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "child_adjustment_support",
+      "caregiver_support",
+      "school_support",
+      "professional_followup"
+    ],
+    "t_score": false
+  }
+}

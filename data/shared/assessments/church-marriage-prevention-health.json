@@ -1,0 +1,160 @@
+{
+  "slug": "church-marriage-prevention-health",
+  "title": "Marriage Prevention and Health Check",
+  "description": "Early support tool for couples who want to prevent separation and strengthen relationship habits.",
+  "version": "1.0.0",
+  "instructions": "Designed for voluntary couple check-ins, mentoring, or pastoral care.",
+  "resultChart": "line_chart",
+  "fields": [
+    {
+      "id": "weekly_quality_time",
+      "label": "Weekly quality time",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Almost never"
+        },
+        {
+          "value": 1,
+          "label": "Rarely"
+        },
+        {
+          "value": 2,
+          "label": "Sometimes"
+        },
+        {
+          "value": 3,
+          "label": "Often"
+        },
+        {
+          "value": 4,
+          "label": "Consistently"
+        }
+      ]
+    },
+    {
+      "id": "conflict_repair_speed",
+      "label": "Ability to repair conflict after disagreement",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Conflicts remain unresolved"
+        },
+        {
+          "value": 1,
+          "label": "Repair is rare"
+        },
+        {
+          "value": 2,
+          "label": "Repair is inconsistent"
+        },
+        {
+          "value": 3,
+          "label": "Repair usually happens"
+        },
+        {
+          "value": 4,
+          "label": "Repair happens quickly and respectfully"
+        }
+      ]
+    },
+    {
+      "id": "shared_values",
+      "label": "Shared values and life direction",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Strongly disconnected"
+        },
+        {
+          "value": 1,
+          "label": "Mostly disconnected"
+        },
+        {
+          "value": 2,
+          "label": "Partly aligned"
+        },
+        {
+          "value": 3,
+          "label": "Mostly aligned"
+        },
+        {
+          "value": 4,
+          "label": "Strongly aligned"
+        }
+      ]
+    },
+    {
+      "id": "support_network",
+      "label": "Healthy support network",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No healthy support"
+        },
+        {
+          "value": 1,
+          "label": "Limited support"
+        },
+        {
+          "value": 2,
+          "label": "Some support"
+        },
+        {
+          "value": 3,
+          "label": "Good support"
+        },
+        {
+          "value": 4,
+          "label": "Strong support"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "weekly_quality_time",
+      "conflict_repair_speed",
+      "shared_values",
+      "support_network"
+    ],
+    "t_score": false
+  }
+}

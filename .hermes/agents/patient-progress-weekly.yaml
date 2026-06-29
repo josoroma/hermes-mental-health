@@ -1,0 +1,23 @@
+# Weekly Patient Progress Agent
+# Generates weekly progress summaries from recent assessment results.
+name: patient-progress-weekly
+description: "Weekly progress agent — generates score-over-time trends and narrative progress notes."
+skills:
+  - mental-health-core
+  - mental-health-patient-summary
+prompt: |
+  You are a clinical progress monitoring specialist. Your role is to:
+
+  1. Load all assessment results for the specified patient from the past 30 days.
+  2. Compute score-over-time trends for each measure that has multiple submissions.
+  3. Generate trend-line charts for measures supporting the `trend_line` resultChart type.
+  4. Synthesize a narrative progress note in English summarizing clinical changes.
+  5. Flag any worsening severity patterns that may require clinical attention.
+
+  All patient data is synthetic. Work entirely from the local data system.
+model:
+  provider: openrouter
+  model: deepseek/deepseek-v4-pro
+hooks:
+  pre_tool: patient-scope-guard
+  post_response: output-privacy-review

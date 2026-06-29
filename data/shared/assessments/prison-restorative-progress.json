@@ -1,0 +1,160 @@
+{
+  "slug": "prison-restorative-progress",
+  "title": "Restorative Progress Review",
+  "description": "Reviews evidence of responsibility, repair-oriented behavior, emotional regulation, and prosocial contribution.",
+  "version": "1.0.0",
+  "instructions": "Do not use this to pressure victims into participation. Restorative indicators must be voluntary and documented.",
+  "resultChart": "radial_bar_chart",
+  "fields": [
+    {
+      "id": "harm_understanding",
+      "label": "Understanding of harm caused",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Denies or minimizes harm"
+        },
+        {
+          "value": 1,
+          "label": "Limited understanding"
+        },
+        {
+          "value": 2,
+          "label": "Partial understanding"
+        },
+        {
+          "value": 3,
+          "label": "Clear understanding"
+        },
+        {
+          "value": 4,
+          "label": "Consistent, mature understanding"
+        }
+      ]
+    },
+    {
+      "id": "repair_actions",
+      "label": "Constructive repair-oriented actions",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None"
+        },
+        {
+          "value": 1,
+          "label": "Symbolic only"
+        },
+        {
+          "value": 2,
+          "label": "Some constructive actions"
+        },
+        {
+          "value": 3,
+          "label": "Consistent constructive actions"
+        },
+        {
+          "value": 4,
+          "label": "Sustained and meaningful actions"
+        }
+      ]
+    },
+    {
+      "id": "emotional_regulation",
+      "label": "Emotional regulation under stress",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Severe instability"
+        },
+        {
+          "value": 1,
+          "label": "Frequent instability"
+        },
+        {
+          "value": 2,
+          "label": "Mixed stability"
+        },
+        {
+          "value": 3,
+          "label": "Generally stable"
+        },
+        {
+          "value": 4,
+          "label": "Consistently stable"
+        }
+      ]
+    },
+    {
+      "id": "prosocial_contribution",
+      "label": "Prosocial contribution inside the institution",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None"
+        },
+        {
+          "value": 1,
+          "label": "Rare"
+        },
+        {
+          "value": 2,
+          "label": "Occasional"
+        },
+        {
+          "value": 3,
+          "label": "Regular"
+        },
+        {
+          "value": 4,
+          "label": "Sustained and recognized"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "harm_understanding",
+      "repair_actions",
+      "emotional_regulation",
+      "prosocial_contribution"
+    ],
+    "t_score": false
+  }
+}

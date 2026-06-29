@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hermes Mental Health — Tutorial</title>
+  <meta name="description" content="Seven-part tutorial walking through the Hermes Mental Health application — dashboard, patients, assessments, results, editor, and mental health runtime configuration.">
+  <style>
+    :root {
+      color-scheme: light;
+      --background: oklch(1 0 0);
+      --foreground: oklch(0.145 0 0);
+      --card: oklch(1 0 0);
+      --card-foreground: oklch(0.145 0 0);
+      --primary: oklch(0.52 0.22 255);
+      --primary-foreground: oklch(0.97 0.014 254.604);
+      --secondary: oklch(0.967 0.001 286.375);
+      --secondary-foreground: oklch(0.21 0.006 285.885);
+      --muted: oklch(0.97 0 0);
+      --muted-foreground: oklch(0.556 0 0);
+      --accent: oklch(0.97 0 0);
+      --accent-foreground: oklch(0.205 0 0);
+      --border: oklch(0.922 0 0);
+      --ring: oklch(0.708 0 0);
+      --chart-1: oklch(0.78 0.16 200);
+      --chart-2: oklch(0.65 0.19 215);
+      --chart-3: oklch(0.55 0.18 240);
+      --chart-4: oklch(0.45 0.16 260);
+      --radius: 0.625rem;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .dark {
+      color-scheme: dark;
+      --background: oklch(0.145 0 0);
+      --foreground: oklch(0.985 0 0);
+      --card: oklch(0.205 0 0);
+      --card-foreground: oklch(0.985 0 0);
+      --primary: oklch(0.46 0.19 263);
+      --primary-foreground: oklch(0.97 0.014 254.604);
+      --secondary: oklch(0.274 0.006 286.033);
+      --secondary-foreground: oklch(0.985 0 0);
+      --muted: oklch(0.269 0 0);
+      --muted-foreground: oklch(0.708 0 0);
+      --accent: oklch(0.269 0 0);
+      --accent-foreground: oklch(0.985 0 0);
+      --border: oklch(1 0 0 / 10%);
+      --ring: oklch(0.556 0 0);
+      --chart-1: oklch(0.55 0.12 190);
+      --chart-2: oklch(0.46 0.14 205);
+      --chart-3: oklch(0.39 0.13 230);
+      --chart-4: oklch(0.32 0.11 250);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(180deg, color-mix(in oklch, var(--background) 94%, transparent), var(--background)),
+        radial-gradient(circle at 18% 8%, color-mix(in oklch, var(--primary) 12%, transparent), transparent 30%),
+        radial-gradient(circle at 78% 12%, color-mix(in oklch, var(--chart-2) 10%, transparent), transparent 28%),
+        var(--background);
+      color: var(--foreground);
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 40px;
+    }
+
+    header {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      padding: 28px 0 22px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--muted-foreground);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 840px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 88px);
+      line-height: 0.94;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      max-width: 740px;
+      margin: 18px 0 0;
+      color: var(--muted-foreground);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .nav-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 40px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 9px 13px;
+      background: var(--card);
+      color: var(--card-foreground);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 1px 1px color-mix(in oklch, var(--foreground) 3%, transparent);
+      cursor: pointer;
+    }
+
+    .button.primary {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: var(--primary-foreground);
+    }
+
+    .button:focus-visible,
+    .episode:focus-visible {
+      outline: 2px solid var(--ring);
+      outline-offset: 2px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      gap: 20px;
+      padding-top: 22px;
+    }
+
+    .player-panel,
+    .playlist-panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: color-mix(in oklch, var(--card) 88%, transparent);
+      box-shadow: 0 18px 40px color-mix(in oklch, var(--foreground) 8%, transparent);
+      backdrop-filter: blur(12px);
+    }
+
+    .player-panel { padding: 22px; }
+
+    .cover {
+      display: grid;
+      min-height: 280px;
+      align-content: end;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      background:
+        linear-gradient(145deg, color-mix(in oklch, var(--foreground) 84%, transparent), color-mix(in oklch, var(--primary) 74%, transparent)),
+        linear-gradient(45deg, var(--chart-3), var(--primary));
+      color: var(--primary-foreground);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cover::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid color-mix(in oklch, var(--primary-foreground) 22%, transparent);
+      border-radius: calc(var(--radius) - 2px);
+      pointer-events: none;
+    }
+
+    .cover-title {
+      position: relative;
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.06;
+      letter-spacing: 0;
+    }
+
+    .cover-subtitle {
+      position: relative;
+      margin: 10px 0 0;
+      color: color-mix(in oklch, var(--primary-foreground) 72%, transparent);
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    .now-playing {
+      display: grid;
+      gap: 12px;
+      padding-top: 18px;
+      padding-bottom: 2px;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .episode-kicker {
+      margin: 0;
+      color: var(--muted-foreground);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 2px 0 0;
+      font-size: 25px;
+      line-height: 1.18;
+    }
+
+    .description {
+      margin: 0;
+      color: var(--muted-foreground);
+      line-height: 1.6;
+    }
+
+    .content-panel {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-top: 18px;
+      background: var(--card);
+      line-height: 1.7;
+    }
+
+    .content-panel img {
+      max-width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin: 14px 0;
+    }
+
+    .content-panel h3 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+
+    .content-panel h3:first-child { margin-top: 0; }
+
+    .content-panel p { margin: 8px 0; }
+
+    .content-panel table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+
+    .content-panel th,
+    .content-panel td {
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .content-panel th {
+      font-weight: 700;
+      color: var(--muted-foreground);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .content-panel code {
+      background: var(--muted);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .content-panel pre {
+      background: var(--muted);
+      padding: 14px;
+      border-radius: var(--radius);
+      overflow-x: auto;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .content-panel ul {
+      padding-left: 20px;
+      margin: 8px 0;
+    }
+
+    .content-panel li {
+      margin: 4px 0;
+    }
+
+    .playlist-panel {
+      display: grid;
+      gap: 0;
+      align-content: start;
+    }
+
+    .playlist-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 22px 22px 16px;
+    }
+
+    .playlist-header h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .playlist-header span {
+      color: var(--muted-foreground);
+      font-size: 13px;
+    }
+
+    .playlist {
+      display: grid;
+      gap: 2px;
+      padding: 0 8px 8px;
+    }
+
+    .episode {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 12px;
+      align-items: center;
+      width: 100%;
+      border: none;
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      background: transparent;
+      color: var(--foreground);
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .episode:hover { background: var(--accent); }
+
+    .episode.active {
+      background: var(--accent);
+    }
+
+    .episode-number {
+      display: grid;
+      place-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: var(--radius);
+      background: var(--muted);
+      color: var(--muted-foreground);
+      font-size: 17px;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .episode.active .episode-number {
+      background: var(--primary);
+      color: var(--primary-foreground);
+    }
+
+    .episode-title {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .episode-summary {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted-foreground);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted-foreground);
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      header {
+        grid-template-columns: 1fr;
+      }
+      .nav-actions {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">Tutorial / 7 Parts</p>
+        <h1>Hermes Mental Health</h1>
+        <p class="lede">A guided walkthrough of the practitioner application — from the dashboard through patient profiles, assessment invites, form-taking, results analysis, the assessment editor, and the mental health runtime configuration.</p>
+      </div>
+      <div class="nav-actions">
+        <button class="button" id="themeButton" type="button" aria-pressed="false">Dark theme</button>
+        <a class="button primary" href="https://github.com/josoroma/hermes-mental-health" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="player-panel" aria-label="Tutorial content">
+        <div class="cover">
+          <h3 class="cover-title" id="coverTitle">Dashboard</h3>
+          <p class="cover-subtitle" id="coverSubtitle">Central hub — patient list, assessment library, and Create With AI.</p>
+        </div>
+
+        <div class="now-playing">
+          <div>
+            <p class="episode-kicker" id="episodeKicker">Part 1</p>
+            <h2 id="episodeTitle">Dashboard</h2>
+          </div>
+          <p class="description" id="episodeDescription">The dashboard is your central hub. At the top you'll see the Hermes Mental Health header with Create With AI and theme controls. Below that, a patient summary table lists every patient with their ID, name, and number of completed assessments.</p>
+        </div>
+
+        <div class="content-panel" id="contentPanel">
+          <!-- Content inserted by JS -->
+        </div>
+      </section>
+
+      <section class="playlist-panel" id="playlist" aria-label="Tutorial pages">
+        <div class="playlist-header">
+          <h2>Tutorial pages</h2>
+          <span>7 parts</span>
+        </div>
+        <div class="playlist" id="episodeList"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Hermes Mental Health — practitioner documentation.</span>
+      <span>Open-source DSM-5-TR assessment management.</span>
+    </footer>
+  </div>
+
+  <script>
+    const pages = [
+      {
+        number: 1,
+        title: "Dashboard",
+        summary: "Central hub — patient list, assessment library, and Create With AI.",
+        description: "The dashboard is your central hub. At the top you'll see the Hermes Mental Health header with Create With AI and theme controls. Below that, a patient summary table lists every patient with their ID, name, and number of completed assessments.",
+        coverTitle: "Dashboard",
+        coverSubtitle: "Central hub — patient list, assessment library, and Create With AI.",
+        content: `
+          <img src="screenshots/01-dashboard.png" alt="Dashboard overview">
+          <h3>Dashboard</h3>
+          <p>The dashboard is your central hub. At the top you'll see the <strong>Hermes Mental Health</strong> header with <strong>Create With AI</strong> and theme controls. Below that, a patient summary table lists every patient with their ID, name, and number of completed assessments. Click any patient name to open their profile.</p>
+          <img src="screenshots/01b-available-assessments.png" alt="Available Assessments list">
+          <p>The <strong>Available Assessments</strong> section lists all 62 DSM-5-TR measures in the library. Each assessment name links to its editor page where you can view the form definition.</p>
+          <img src="screenshots/01c-create-with-ai.png" alt="Create With AI">
+          <p>The <strong>Create With AI</strong> link lets you define a custom measure in plain English and generate the full form definition.</p>
+          <h3>Navigation bar</h3>
+          <p>Use the navigation bar to move between pages. The patient tab bar (Profile, Assessments, Results) appears when viewing a patient. The assessment library is accessible from the dashboard.</p>
+        `
+      },
+      {
+        number: 2,
+        title: "Patient Profile",
+        summary: "AI clinical summary, demographics, background, and assessment history.",
+        description: "The patient profile page is your workspace for a single patient. The tab bar at the top lets you switch between Profile, Assessments, and Results.",
+        coverTitle: "Patient Profile",
+        coverSubtitle: "AI clinical summary, demographics, background, and assessment history.",
+        content: `
+          <img src="screenshots/02-patient-profile.png" alt="Patient profile overview">
+          <h3>Patient Profile</h3>
+          <p>The patient profile page is your workspace for a single patient. The tab bar at the top lets you switch between <strong>Profile</strong>, <strong>Assessments</strong>, and <strong>Results</strong>.</p>
+          <p>The profile tab shows an <strong>AI-generated clinical summary</strong> synthesizing all completed assessments. Below that you'll find demographics, background, and a complete assessment history.</p>
+          <p>The <strong>Reload</strong> button lets you regenerate the AI summary to incorporate new results. Patient data is scoped to <code>data/patients/&lt;PATIENT_ID&gt;/</code>.</p>
+          <h3>Demographics</h3>
+          <p>Each patient record includes ID, name, date of birth, and contact information. These fields are editable from the profile page.</p>
+        `
+      },
+      {
+        number: 3,
+        title: "Assessment Invites",
+        summary: "Create invites, generate tokens, and share secure assessment links.",
+        description: "Create an invite by selecting an assessment from the dropdown of 62 DSM-5-TR measures and clicking submit. The system generates a unique 32-character token.",
+        coverTitle: "Assessment Invites",
+        coverSubtitle: "Create invites, generate tokens, and share secure assessment links.",
+        content: `
+          <img src="screenshots/03b-assessment-invite-created.png" alt="Assessment invite created">
+          <h3>Create an invite</h3>
+          <p>Select an assessment from the <strong>Assessment</strong> dropdown (62 DSM-5-TR measures) and click submit. The system generates a unique 32-character token. The invite URL looks like:</p>
+          <pre>http://127.0.0.1:9130/a/Zsl8rVhwkqdmDzRp00BdB03Rdk1O7JYZ</pre>
+          <h3>Active Invites table</h3>
+          <table>
+            <tr><th>Column</th><th>Description</th></tr>
+            <tr><td>Assessment</td><td>Measure name, linked to the form</td></tr>
+            <tr><td>Created</td><td>Timestamp</td></tr>
+            <tr><td>Status</td><td><code>pending</code> or <code>completed</code></td></tr>
+            <tr><td>Link</td><td>The invite URL for sharing</td></tr>
+          </table>
+          <h3>Sharing with patients</h3>
+          <p>Copy the invite link and send it via email, SMS, or patient portal. The token is cryptographically random — unguessable without the link.</p>
+          <h3>After completion</h3>
+          <p>When the patient submits the form, results are saved to <code>data/patients/&lt;PATIENT_ID&gt;/results/</code>, the invite status updates to <code>completed</code>, and results appear on the Results page with charts and scores.</p>
+        `
+      },
+      {
+        number: 4,
+        title: "Taking Assessments",
+        summary: "How patients fill in and submit assessment forms via invite links.",
+        description: "When a patient opens the invite link, they see the full assessment form. Each question is rendered according to its field type: scale, text, select, or multi-select.",
+        coverTitle: "Taking Assessments",
+        coverSubtitle: "How patients fill in and submit assessment forms via invite links.",
+        content: `
+          <img src="screenshots/05-assessment-form.png" alt="Assessment form">
+          <h3>Taking an assessment</h3>
+          <p>When a patient opens the invite link, they see the full assessment form. The header shows the assessment title, a back link to the dashboard, and theme controls. Each question is rendered according to its field type:</p>
+          <ul>
+            <li><strong>Scale questions</strong> — radio buttons with labeled endpoints</li>
+            <li><strong>Text questions</strong> — text areas for free-form responses</li>
+            <li><strong>Select questions</strong> — dropdown menus</li>
+            <li><strong>Multi-select</strong> — checkboxes for multiple choices</li>
+          </ul>
+          <p>The patient fills in their answers and clicks <strong>Submit</strong> at the bottom. On submission, they see a confirmation page. Results are immediately saved and linked to the invite.</p>
+          <h3>Form types supported</h3>
+          <p>The form server renders PHQ-9, GAD-7, PROMIS measures, DSM-5-TR cross-cutting assessments, cultural formulation interviews, and custom measures created with Create With AI.</p>
+        `
+      },
+      {
+        number: 5,
+        title: "Results",
+        summary: "Scores, severity ratings, bar charts, and item-level answer breakdowns.",
+        description: "The results page shows every completed assessment with scores and severity ratings. Each entry shows the assessment name, submission timestamp, and key scores.",
+        coverTitle: "Results",
+        coverSubtitle: "Scores, severity ratings, bar charts, and item-level answer breakdowns.",
+        content: `
+          <img src="screenshots/04-patient-results.png" alt="Results list">
+          <h3>Results list</h3>
+          <p>Each entry shows the assessment name, submission timestamp, and key scores:</p>
+          <table>
+            <tr><th>Assessment</th><th>Score</th><th>Severity</th></tr>
+            <tr><td>PHQ-9 (Depression)</td><td>Total: 15</td><td>Moderately severe</td></tr>
+            <tr><td>GAD-7 (Anxiety)</td><td>Avg: 1.3</td><td>Unscorable (incomplete)</td></tr>
+            <tr><td>PROMIS Anxiety</td><td>T: 84.0</td><td>Severe</td></tr>
+            <tr><td>PROMIS Depression</td><td>T: 76.8</td><td>Severe</td></tr>
+            <tr><td>PROMIS Sleep</td><td>T: 60.7</td><td>Moderate</td></tr>
+          </table>
+          <p>Data quality issues are flagged — e.g. the GAD-7 shows <strong>"unscorable"</strong> with a note explaining the patient only completed 7 of 10 items.</p>
+          <img src="screenshots/07-result-detail.png" alt="Result detail">
+          <h3>Chart</h3>
+          <p>A horizontal bar with colored severity bands: <span style="color:green">Green</span> (None), <span style="color:#c90">Yellow</span> (Mild), <span style="color:orange">Orange</span> (Moderate), <span style="color:#d40">Dark orange</span> (Moderately severe), <span style="color:red">Red</span> (Severe). A marker shows where the patient's score falls.</p>
+          <h3>Scores table</h3>
+          <p>Machine-readable summary like <code>{"severity": "moderately severe depression", "total": 15}</code>.</p>
+          <h3>Answers table</h3>
+          <p>Item-level breakdown of every question and the patient's response. Highest-scoring items surface the most acute symptoms.</p>
+        `
+      },
+      {
+        number: 6,
+        title: "Assessment Editor",
+        summary: "View and modify DSM-5-TR measure definitions — fields, scoring, thresholds.",
+        description: "The editor shows metadata including title, slug, description, and version. Below are structured fields for every question with ID, label, type, and options.",
+        coverTitle: "Assessment Editor",
+        coverSubtitle: "View and modify DSM-5-TR measure definitions — fields, scoring, thresholds.",
+        content: `
+          <img src="screenshots/06-assessment-editor.png" alt="Assessment editor">
+          <h3>Metadata</h3>
+          <table>
+            <tr><td><strong>Title</strong></td><td>Full DSM-5-TR assessment name</td></tr>
+            <tr><td><strong>Slug</strong></td><td>URL-friendly identifier</td></tr>
+            <tr><td><strong>Description</strong></td><td>Clinical purpose</td></tr>
+            <tr><td><strong>Version</strong></td><td>Form version number</td></tr>
+          </table>
+          <h3>Fields</h3>
+          <table>
+            <tr><th>Property</th><th>Example</th></tr>
+            <tr><td><code>id</code></td><td><code>q1</code></td></tr>
+            <tr><td><code>label</code></td><td>Question text</td></tr>
+            <tr><td><code>type</code></td><td><code>scale</code>, <code>text</code>, <code>select</code>, <code>multi_select</code>, <code>boolean</code></td></tr>
+            <tr><td><code>required</code></td><td><code>true</code> / <code>false</code></td></tr>
+            <tr><td><code>options</code></td><td>Answer choices for scales/selects</td></tr>
+            <tr><td><code>min</code> / <code>max</code></td><td>Numeric range for scales</td></tr>
+          </table>
+          <img src="screenshots/06b-editor-detail.png" alt="Editor detail">
+          <h3>Scoring rules</h3>
+          <ul>
+            <li><strong>Total calculation</strong> — how the raw score is computed</li>
+            <li><strong>Severity thresholds</strong> — score ranges → severity labels</li>
+            <li><strong>T-score conversion</strong> — raw-to-T-score lookup tables (PROMIS)</li>
+            <li><strong>Reverse scoring</strong> — items to reverse before totaling</li>
+          </ul>
+          <h3>Editing</h3>
+          <p>Add questions, change answer choices, update thresholds, toggle required properties. Click <strong>Save</strong> after changes. New invites use the updated form.</p>
+          <h3>Create With AI</h3>
+          <p>From the dashboard, <strong>Create With AI</strong> generates a full form definition from a plain-English description. Review and edit the result in the editor, then save it as a new measure.</p>
+        `
+      },
+      {
+        number: 7,
+        title: ".hermes Mental Health",
+        summary: "Agent hooks, agents, commands, plugins, skill-bundles, skills, data scoping, Python package, and local Makefile.",
+        description: "The .hermes directory powers the runtime: hooks enforce privacy, agents automate tasks, skills drive reusable workflows, and the Makefile gets everything running locally — even with private llama-server models.",
+        coverTitle: ".hermes Mental Health",
+        coverSubtitle: "Agent hooks, agents, commands, plugins, skill-bundles, skills, data scoping, Python package, and local Makefile.",
+        content: `
+          <h3>.hermes/agent-hooks</h3>
+          <p>Shell-script guards that run before file reads or output writes. Two hooks enforce patient-scope and privacy:</p>
+          <table>
+            <tr><th>File</th><th>Purpose</th></tr>
+            <tr><td><code>patient-scope-guard.sh</code></td><td>Blocks cross-patient file access — enforces HERMES_PATIENT_ID on every read</td></tr>
+            <tr><td><code>output-privacy-review.sh</code></td><td>Reviews generated output for accidental PII disclosure before delivery</td></tr>
+          </table>
+          <h3>.hermes/agents</h3>
+          <p>Markdown-defined agents for delegated tasks. Each includes primary skills and a task description:</p>
+          <table>
+            <tr><th>Agent</th><th>Purpose</th></tr>
+            <tr><td><code>assessment-review.md</code></td><td>Reviews assessment artifacts, identifies scores, interpretation limits, and risk flags</td></tr>
+            <tr><td><code>patient-intake.md</code></td><td>Collects structured demographic and clinical background into profile.md</td></tr>
+            <tr><td><code>patient-progress-weekly.md</code></td><td>Generates weekly progress summaries across sessions, assessments, and care plan</td></tr>
+            <tr><td><code>privacy-audit.md</code></td><td>De-identified audit of data access patterns and consent compliance</td></tr>
+          </table>
+          <h3>.hermes/commands</h3>
+          <p>A single slash-command bundle, <code>mental-health.md</code>, defines five practitioner bundles: <code>/mental-health</code>, <code>/patient-session</code>, <code>/assessment-review</code>, <code>/care-plan</code>, and <code>/safety-check</code>. Each loads a skill-bundle and provides copy-paste workflows — from patient-init to assessment-graph generation.</p>
+          <h3>.hermes/plugins/mental-health</h3>
+          <p>A YAML-defined plugin (<code>plugin.yaml</code>) that registers patient-scoped roots, guard hooks, and Python modules:</p>
+          <table>
+            <tr><th>File</th><th>Purpose</th></tr>
+            <tr><td><code>plugin.yaml</code></td><td>Plugin manifest: version, entrypoint, patient roots, guard hooks</td></tr>
+            <tr><td><code>__init__.py</code></td><td>Plugin package entry point</td></tr>
+            <tr><td><code>tools.py</code></td><td>Plugin tools — form server bridge, scope validation, invite creation</td></tr>
+            <tr><td><code>schemas.py</code></td><td>Pydantic models for assessment invites, results, and patient profiles</td></tr>
+          </table>
+          <h3>.hermes/skill-bundles</h3>
+          <p>Five YAML bundles that group skills for specific practitioner workflows:</p>
+          <table>
+            <tr><th>Bundle</th><th>Skills Included</th></tr>
+            <tr><td><code>mental-health.yaml</code></td><td>9 skills — core, scope, local commands, assessment review/invite/results, practitioner notes, patient summary, safety check</td></tr>
+            <tr><td><code>assessment-review.yaml</code></td><td>Assessment review and patient scope skills</td></tr>
+            <tr><td><code>patient-session.yaml</code></td><td>Session prep, notes, and summary skills</td></tr>
+            <tr><td><code>care-plan.yaml</code></td><td>Care plan drafting and review skills</td></tr>
+            <tr><td><code>safety-check.yaml</code></td><td>Safety documentation and escalation support skills</td></tr>
+          </table>
+          <h3>.hermes/skills/mental-health</h3>
+          <p>Thirteen individual SKILL.md files, each a self-contained procedure:</p>
+          <table>
+            <tr><th>Skill</th><th>Purpose</th></tr>
+            <tr><td><code>mental-health-core</code></td><td>General practitioner support with patient-scope and guardrails</td></tr>
+            <tr><td><code>mental-health-patient-scope</code></td><td>Enforces single-patient corpus access, blocks cross-patient inference</td></tr>
+            <tr><td><code>mental-health-local-make-commands</code></td><td>Make target reference — form server, patient init, invites, graphs</td></tr>
+            <tr><td><code>mental-health-assessment-review</code></td><td>Reviews assessment files and result summaries</td></tr>
+            <tr><td><code>mental-health-assessment-invite</code></td><td>Creates and sends assessment invites via local form server</td></tr>
+            <tr><td><code>mental-health-assessment-results-url</code></td><td>Prints completed-results HTML URL for a patient</td></tr>
+            <tr><td><code>mental-health-practitioner-note</code></td><td>Drafts structured clinician notes from session context</td></tr>
+            <tr><td><code>mental-health-patient-summary</code></td><td>Summarizes assessment history, care plan, and recent sessions</td></tr>
+            <tr><td><code>mental-health-safety-check</code></td><td>Safety documentation and escalation support</td></tr>
+            <tr><td><code>mental-health-mock-data</code></td><td>Generates synthetic patient profiles and assessment results for testing</td></tr>
+            <tr><td><code>mental-health-documentation</code></td><td>Framework for building app docs and tutorials</td></tr>
+            <tr><td><code>mental-health-walkthrough-video</code></td><td>Produces narrated walkthrough videos</td></tr>
+            <tr><td><code>mental-health-app-onboarding</code></td><td>Onboarding flow for new practitioners</td></tr>
+          </table>
+          <h3>data/ — Patient Data Scoping</h3>
+          <p>All patient information lives under <code>data/patients/&lt;PATIENT_ID&gt;/</code>. The agent-hook <code>patient-scope-guard.sh</code> blocks cross-patient access — each session can only read one patient at a time. Each patient directory contains nested folders (PDFs excluded):</p>
+          <table>
+            <tr><th>Path</th><th>Purpose</th></tr>
+            <tr><td><code>profile.md</code></td><td>Demographics, clinical background, consent status</td></tr>
+            <tr><td><code>assessments/</code></td><td>Form definitions used for this patient's invites</td></tr>
+            <tr><td><code>results/</code></td><td>JSON assessment submissions with scores and metadata</td></tr>
+            <tr><td><code>results/graphs/</code></td><td>SVG score-over-time graphs per assessment</td></tr>
+            <tr><td><code>sessions/</code></td><td>Session notes, transcripts, and summaries</td></tr>
+            <tr><td><code>care-plan/</code></td><td>Drafted and finalized care plan documents</td></tr>
+            <tr><td><code>practitioner-notes/</code></td><td>Clinician-authored progress notes and observations</td></tr>
+          </table>
+          <p>Practice-wide memory in <code>.hermes/memory/</code> is de-identified — no patient-specific data stored globally.</p>
+          <h3>hermes_mental_health — Python Package</h3>
+          <p>A pip-installable package providing patient-scoped helpers and a CLI:</p>
+          <table>
+            <tr><th>Module</th><th>Purpose</th></tr>
+            <tr><td><code>__init__.py</code></td><td>Exports PatientScopeError, PatientWorkspace, validate_patient_id</td></tr>
+            <tr><td><code>patient_scope.py</code></td><td>Validates patient IDs, creates isolated workspaces, enforces boundaries</td></tr>
+            <tr><td><code>cli.py</code></td><td>CLI entry points: init-patient, check-patient, form-server, assessment-invite, assessment-graph, assessment-result-url, assessment-results-url</td></tr>
+            <tr><td><code>form_server.py</code></td><td>FastAPI server for assessment forms at http://127.0.0.1:9130</td></tr>
+            <tr><td><code>assessment_forms.py</code></td><td>YAML form definitions (PHQ-9, GAD-7, Suicide Safety Screen, PROMIS)</td></tr>
+            <tr><td><code>assessments.py</code></td><td>Assessment loading, validation, and result parsing</td></tr>
+          </table>
+          <h3>Makefile — Local Setup, Zero Cloud Required</h3>
+          <p>The Makefile (<code>make help</code>) gets the full app running on a private consumer machine. Everything is self-contained — no cloud dependency.</p>
+          <p><strong>Setup (one time):</strong></p>
+          <pre><code>make install      # venv + dependencies
+make dev          # dev extras (ruff, pytest)</code></pre>
+          <p><strong>Hermes runtime:</strong></p>
+          <pre><code>make hermes-chat        # Chat with default mental-health skills
+make hermes-dashboard    # Dashboard at http://127.0.0.1:9120
+make hermes-update       # Sync this repo's .hermes/ config</code></pre>
+          <p><strong>Local model (no internet needed):</strong></p>
+          <pre><code>make model-download-gguf   # Download a GGUF quant (Qwopus 27B)
+make llama-server          # Serve at http://127.0.0.1:8080</code></pre>
+          <p>The <code>config.yaml</code> already has a <code>llama-local</code> provider pointing to <code>http://127.0.0.1:8080/v1</code>. After <code>make llama-server</code>, just select the <code>llama-local</code> provider in Hermes — the app runs entirely offline on your machine.</p>
+          <p><strong>OpenRouter (internet required):</strong></p>
+          <pre><code>export OPENROUTER_API_KEY=sk-or-v1-...
+make hermes-chat</code></pre>
+          <p>The default <code>config.yaml</code> uses <code>provider: openrouter</code> with <code>deepseek/deepseek-v4-pro</code>. Swap the model or provider in <code>.hermes/config.yaml</code>.</p>
+          <p><strong>Patients and assessments:</strong></p>
+          <pre><code>make form-server                     # Start at http://127.0.0.1:9130
+make patient-init PATIENT_ID=patient-001
+make assessment-invite PATIENT_ID=patient-001 ASSESSMENT_ID=phq-9
+make assessment-graph PATIENT_ID=patient-001 RESULT_ID=phq-9-...</code></pre>
+        `
+      }
+    ];
+
+    const episodeKicker = document.querySelector("#episodeKicker");
+    const episodeTitle = document.querySelector("#episodeTitle");
+    const episodeDescription = document.querySelector("#episodeDescription");
+    const coverTitle = document.querySelector("#coverTitle");
+    const coverSubtitle = document.querySelector("#coverSubtitle");
+    const contentPanel = document.querySelector("#contentPanel");
+    const episodeList = document.querySelector("#episodeList");
+    const themeButton = document.querySelector("#themeButton");
+
+    let activeIndex = 0;
+
+    function applyTheme(theme) {
+      const isDark = theme === "dark";
+      document.documentElement.classList.toggle("dark", isDark);
+      themeButton.textContent = isDark ? "Light theme" : "Dark theme";
+      themeButton.setAttribute("aria-pressed", String(isDark));
+      localStorage.setItem("theme", theme);
+    }
+
+    function renderPlaylist() {
+      episodeList.innerHTML = "";
+      pages.forEach((page, index) => {
+        const button = document.createElement("button");
+        button.className = `episode${index === activeIndex ? " active" : ""}`;
+        button.type = "button";
+        button.innerHTML = `
+          <span class="episode-number">${String(page.number).padStart(2, "0")}</span>
+          <span>
+            <span class="episode-title">${page.title}</span>
+            <span class="episode-summary">${page.summary}</span>
+          </span>
+        `;
+        button.addEventListener("click", () => loadPage(index));
+        episodeList.appendChild(button);
+      });
+    }
+
+    function loadPage(index) {
+      activeIndex = (index + pages.length) % pages.length;
+      const page = pages[activeIndex];
+      episodeKicker.textContent = `Part ${page.number}`;
+      episodeTitle.textContent = page.title;
+      episodeDescription.textContent = page.description;
+      coverTitle.textContent = page.coverTitle;
+      coverSubtitle.textContent = page.coverSubtitle;
+      contentPanel.innerHTML = page.content;
+      renderPlaylist();
+    }
+
+    themeButton.addEventListener("click", () => {
+      applyTheme(document.documentElement.classList.contains("dark") ? "light" : "dark");
+    });
+
+    applyTheme(localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+    renderPlaylist();
+    loadPage(0);
+  </script>
+</body>
+</html>

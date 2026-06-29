@@ -1,0 +1,24 @@
+{
+  "slug": "cfi-alternative",
+  "title": "Cfi Alternative",
+  "description": "Alternative Versions of the Cultural Formulation Interview (CFI)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "none",
+  "fields": [
+    {
+      "id": "question_3",
+      "label": "What troubles you most about your [PROBLEM]?",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

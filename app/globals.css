@@ -1,0 +1,380 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/*
+ * luma dark theme — unconditional dark mode via <html class="dark">
+ * Chart tokens map to DSM-5-TR severity bands:
+ *   --chart-1: green  (none)
+ *   --chart-2: yellow (mild)
+ *   --chart-3: orange (moderate)
+ *   --chart-4: dark orange (moderately severe)
+ *   --chart-5: red    (severe)
+ */
+.dark {
+  --background: oklch(0.13 0.015 260);
+  --foreground: oklch(0.95 0.005 260);
+  --card: oklch(0.17 0.015 260);
+  --card-foreground: oklch(0.95 0.005 260);
+  --popover: oklch(0.17 0.015 260);
+  --popover-foreground: oklch(0.95 0.005 260);
+  --primary: oklch(0.52 0.22 255);
+  --primary-foreground: oklch(0.98 0.005 255);
+  --secondary: oklch(0.22 0.02 260);
+  --secondary-foreground: oklch(0.95 0.005 260);
+  --muted: oklch(0.22 0.02 260);
+  --muted-foreground: oklch(0.65 0.02 260);
+  --accent: oklch(0.22 0.02 260);
+  --accent-foreground: oklch(0.95 0.005 260);
+  --destructive: oklch(0.58 0.22 22);
+  --border: oklch(0.28 0.02 260);
+  --input: oklch(0.28 0.02 260);
+  --ring: oklch(0.52 0.22 255);
+
+  /* Severity chart colors: none → mild → moderate → moderately severe → severe */
+  --chart-1: oklch(0.65 0.19 142);   /* green — none */
+  --chart-2: oklch(0.75 0.16 85);    /* yellow — mild */
+  --chart-3: oklch(0.68 0.18 48);    /* orange — moderate */
+  --chart-4: oklch(0.60 0.20 36);    /* dark orange — moderately severe */
+  --chart-5: oklch(0.55 0.22 22);    /* red — severe */
+
+  --radius: 0.625rem;
+  --sidebar: oklch(0.15 0.015 260);
+  --sidebar-foreground: oklch(0.95 0.005 260);
+  --sidebar-primary: oklch(0.52 0.22 255);
+  --sidebar-primary-foreground: oklch(0.98 0.005 255);
+  --sidebar-accent: oklch(0.22 0.02 260);
+  --sidebar-accent-foreground: oklch(0.95 0.005 260);
+  --sidebar-border: oklch(0.28 0.02 260);
+  --sidebar-ring: oklch(0.52 0.22 255);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ── E12: Visual Polish ──────────────────────────────────────────── */
+
+/* Gradient cover backgrounds — dark-tuned */
+.gradient-cover {
+  background: linear-gradient(
+    135deg,
+    oklch(0.17 0.04 255) 0%,
+    oklch(0.13 0.02 260) 50%,
+    oklch(0.17 0.03 300) 100%
+  );
+}
+
+/* Glass / blur backdrop for panels */
+.glass-panel {
+  background: oklch(0.17 0.015 260 / 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid oklch(0.28 0.02 260 / 0.6);
+}
+
+/* Focus-visible outlines — accessible keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Responsive breakpoint: ≤768px → single column */
+@media (max-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .responsive-hide-mobile {
+    display: none;
+  }
+}
+
+/* ── MDX Editor dark theme ───────────────────────────────────────── */
+
+.mdx-dark-editor [class*="_contentEditable"] {
+  color: oklch(0.95 0.005 260) !important;
+  caret-color: oklch(0.95 0.005 260) !important;
+}
+
+.mdx-dark-editor [class*="_contentEditable"] * {
+  color: oklch(0.95 0.005 260) !important;
+}
+
+.mdx-dark-editor [class*="_contentEditable"] ul {
+  list-style-type: disc !important;
+  padding-left: 1.5em !important;
+}
+
+.mdx-dark-editor [class*="_contentEditable"] ol {
+  list-style-type: decimal !important;
+  padding-left: 1.5em !important;
+}
+
+.mdx-dark-editor [class*="_contentEditable"] li {
+  display: list-item !important;
+}
+
+/* Code blocks */
+.mdx-dark-editor [class*="_contentEditable"] pre,
+.mdx-dark-editor [class*="_contentEditable"] code {
+  color: oklch(0.85 0.005 260) !important;
+  background: oklch(0.11 0.01 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorWrapper"] {
+  background: oklch(0.11 0.01 260) !important;
+  border-color: oklch(0.22 0.02 260) !important;
+  border-radius: var(--radius-md);
+}
+
+.mdx-dark-editor [class*="_codeMirrorToolbar"] {
+  background: oklch(0.15 0.01 260) !important;
+  border-color: oklch(0.22 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor {
+  background: oklch(0.11 0.01 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .cm-content {
+  color: oklch(0.85 0.005 260) !important;
+  caret-color: oklch(0.85 0.005 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .cm-line {
+  color: oklch(0.85 0.005 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .cm-gutters {
+  background: oklch(0.09 0.01 260) !important;
+  color: oklch(0.45 0.02 260) !important;
+  border-right-color: oklch(0.18 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .cm-gutterElement {
+  color: oklch(0.45 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .cm-activeLineGutter {
+  background: oklch(0.15 0.01 260) !important;
+  color: oklch(0.6 0.02 260) !important;
+}
+
+/* CodeMirror toolbar */
+.mdx-dark-editor [class*="_codeMirrorToolbar"] {
+  background: oklch(0.15 0.01 260) !important;
+  border-color: oklch(0.22 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorToolbar"] button,
+.mdx-dark-editor [class*="_codeMirrorToolbar"] [role="combobox"] {
+  color: oklch(0.85 0.005 260) !important;
+  background: oklch(0.17 0.015 260) !important;
+  border-color: oklch(0.22 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorToolbar"] button:hover {
+  background: oklch(0.22 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_codeMirrorToolbar"] button svg {
+  fill: oklch(0.85 0.005 260) !important;
+  color: oklch(0.85 0.005 260) !important;
+}
+
+/* CodeMirror syntax colors */
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .ͼ1.cm-keyword { color: oklch(0.7 0.15 280) !important; }
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .ͼ1.cm-string  { color: oklch(0.7 0.15 150) !important; }
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .ͼ1.cm-number  { color: oklch(0.7 0.15 80) !important; }
+.mdx-dark-editor [class*="_codeMirrorWrapper"] .cm-editor .ͼ1.cm-comment { color: oklch(0.5 0.02 260) !important; font-style: italic; }
+
+/* CodeMirror toolbar select */
+.mdx-dark-editor [class*="_codeMirrorToolbar"] button,
+.mdx-dark-editor [class*="_codeMirrorToolbar"] [class*="_select"] {
+  color: oklch(0.85 0.005 260) !important;
+}
+
+.mdx-dark-editor [class*="_toolbar"] {
+  background: oklch(0.17 0.015 260) !important;
+  border-color: oklch(0.28 0.02 260) !important;
+}
+
+/* Hide check-list button (3rd in ListsToggle group) */
+.mdx-dark-editor [class*="_toolbar"] [role="radiogroup"] > :nth-child(3) {
+  display: none !important;
+}
+
+.mdx-dark-editor [class*="_toolbar"] button {
+  color: oklch(0.65 0.02 260) !important;
+}
+
+/* Make combobox triggers in toolbar fully visible */
+.mdx-dark-editor [class*="_toolbar"] [class*="_selectTrigger"] {
+  color: oklch(0.9 0.005 260) !important;
+  background: oklch(0.17 0.015 260) !important;
+}
+
+[role="combobox"] {
+  color: var(--foreground) !important;
+  background: oklch(0.17 0.015 260) !important;
+  border-color: oklch(0.28 0.02 260) !important;
+}
+
+[role="combobox"] * {
+  color: var(--foreground) !important;
+  background: transparent !important;
+}
+
+[role="combobox"] svg,
+[role="combobox"] svg * {
+  fill: var(--foreground) !important;
+  color: var(--foreground) !important;
+}
+
+[role="combobox"]:hover {
+  background: oklch(0.22 0.02 260) !important;
+}
+
+/* Catch BlockTypeSelect trigger */
+[data-toolbar-item="blockTypeSelect"] {
+  background: oklch(0.17 0.015 260) !important;
+  color: var(--foreground) !important;
+  border-color: oklch(0.28 0.02 260) !important;
+}
+
+[data-toolbar-item="blockTypeSelect"] * {
+  color: var(--foreground) !important;
+  background: transparent !important;
+}
+
+/* Aggressive: any element with combobox or select in aria attributes */
+[aria-haspopup="listbox"] {
+  background: oklch(0.17 0.015 260) !important;
+  color: var(--foreground) !important;
+  border-color: oklch(0.28 0.02 260) !important;
+}
+
+[aria-haspopup="listbox"] * {
+  color: var(--foreground) !important;
+  background: transparent !important;
+}
+
+.mdx-dark-editor [class*="_toolbar"] button svg {
+  fill: oklch(0.65 0.02 260) !important;
+  color: oklch(0.65 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_toolbar"] button:hover,
+.mdx-dark-editor [class*="_toolbar"] button[data-state="on"],
+.mdx-dark-editor [class*="_toolbar"] button[data-active="true"] {
+  color: oklch(0.95 0.005 260) !important;
+  background: oklch(0.22 0.02 260) !important;
+}
+
+.mdx-dark-editor [class*="_toolbar"] button:hover svg,
+.mdx-dark-editor [class*="_toolbar"] button[data-state="on"] svg,
+.mdx-dark-editor [class*="_toolbar"] button[data-active="true"] svg {
+  fill: oklch(0.95 0.005 260) !important;
+  color: oklch(0.95 0.005 260) !important;
+}
+
+/* MDX Editor portal popups (rendered outside editor tree) */
+[class*="_selectContent_"],
+[class*="_popupContainer_"] {
+  background: oklch(0.17 0.015 260) !important;
+  color: oklch(0.95 0.005 260) !important;
+  border-color: oklch(0.28 0.02 260) !important;
+}
+
+[class*="_selectContent_"] [role="option"],
+[class*="_popupContainer_"] [role="option"] {
+  color: oklch(0.95 0.005 260) !important;
+}
+
+[class*="_selectContent_"] [role="option"]:hover,
+[class*="_popupContainer_"] [role="option"]:hover {
+  background: oklch(0.22 0.02 260) !important;
+  color: oklch(0.95 0.005 260) !important;
+}
+
+[role="listbox"] {
+  background: oklch(0.17 0.015 260) !important;
+  color: oklch(0.95 0.005 260) !important;
+  border-color: oklch(0.28 0.02 260) !important;
+}
+
+[role="listbox"] [role="option"] {
+  color: oklch(0.95 0.005 260) !important;
+}
+
+[role="listbox"] [role="option"]:hover {
+  background: oklch(0.22 0.02 260) !important;
+}
+
+/* CodeMirror language dropdown popup */
+[class*="_codeMirrorToolbar_"] [role="listbox"] {
+  background: oklch(0.17 0.015 260) !important;
+  color: oklch(0.95 0.005 260) !important;
+  border-color: oklch(0.28 0.02 260) !important;
+}
+
+[class*="_codeMirrorToolbar_"] [role="listbox"] [role="option"]:hover {
+  background: oklch(0.22 0.02 260) !important;
+}

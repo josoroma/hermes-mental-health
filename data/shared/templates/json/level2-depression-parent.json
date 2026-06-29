@@ -1,0 +1,360 @@
+{
+  "slug": "level2-depression-parent",
+  "title": "LEVEL 2—Depression—Parent/Guardian of Child Age 6-17",
+  "description": "PROMIS Emotional Distress—Depression—Parent Item Bank",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "Could not stop feeling sad.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "Felt alone.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "Felt like he/she couldn’t do anything right.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "Felt lonely.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "Felt sad.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "Felt unhappy.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "Thought that his/her life was bad.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "Didn’t care about anything.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "Felt stressed.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_10",
+      "label": "Felt too sad to eat.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    },
+    {
+      "id": "item_11",
+      "label": "Wanted to be by himself/herself.",
+      "type": "scale",
+      "required": true,
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never"
+        },
+        {
+          "value": 2,
+          "label": "Rarely"
+        },
+        {
+          "value": 3,
+          "label": "Sometimes"
+        },
+        {
+          "value": 4,
+          "label": "Often"
+        },
+        {
+          "value": 5,
+          "label": "Always"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "t_score",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8",
+      "item_9",
+      "item_10",
+      "item_11"
+    ],
+    "t_score": true
+  }
+}

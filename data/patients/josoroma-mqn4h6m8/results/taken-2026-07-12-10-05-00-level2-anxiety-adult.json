@@ -1,0 +1,26 @@
+{
+  "resultId": "result-1782700000005-demo5",
+  "inviteToken": "demo-anx-followup-token-32charxxx5",
+  "patientId": "josoroma-mqn4h6m8",
+  "assessmentSlug": "level2-anxiety-adult",
+  "scoring": {
+    "assessmentSlug": "level2-anxiety-adult",
+    "patientId": "josoroma-mqn4h6m8",
+    "total": 19,
+    "average": 2.71,
+    "tScore": 56,
+    "severity": "moderate",
+    "dataQualityFlags": []
+  },
+  "answers": {
+    "item_1": 2,
+    "item_2": 3,
+    "item_3": 3,
+    "item_4": 2,
+    "item_5": 3,
+    "item_6": 3,
+    "item_7": 3
+  },
+  "createdAt": "2026-07-12T10:05:00.000Z",
+  "resultChart": "t_score_gauge"
+}

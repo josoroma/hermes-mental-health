@@ -1,0 +1,329 @@
+{
+  "slug": "severity-panic-child",
+  "title": "Severity Measure for Panic Disorder—Child Age 11–17",
+  "description": "Name: ____________________________________ Age: ______ Date: _________________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "felt moments of sudden terror, fear, or fright, sometimes out of the blue (i.e., a panic attack)",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "felt anxious, worried, or nervous about having more panic attacks",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "have had thoughts of losing control, dying, going crazy, or other bad things happening because of panic attacks",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "felt a racing heart, sweaty, trouble breathing, faint, or shaky",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "felt tense muscles, felt on edge or restless, or had trouble relaxing or trouble sleeping",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "avoided, or did not approach or enter, situations in which panic attacks might occur",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "left situations early, or participated only minimally, because of panic attacks",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "spent a lot of time preparing for, or procrastinating about (putting off), situations in which panic attacks might occur",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "distracted myself to avoid thinking about panic attacks",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_10",
+      "label": "needed help to cope with panic attacks (e.g., alcohol or medication, superstitious objects,  other people)",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8",
+      "item_9",
+      "item_10"
+    ],
+    "t_score": false
+  }
+}

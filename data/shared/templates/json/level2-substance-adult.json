@@ -1,0 +1,24 @@
+{
+  "slug": "level2-substance-adult",
+  "title": "LEVEL 2—Substance Use—Adult",
+  "description": "Adapted from the NIDA-Modified ASSIST",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "response",
+      "label": "LEVEL 2—Substance Use—Adult",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "t_score",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": true
+  }
+}

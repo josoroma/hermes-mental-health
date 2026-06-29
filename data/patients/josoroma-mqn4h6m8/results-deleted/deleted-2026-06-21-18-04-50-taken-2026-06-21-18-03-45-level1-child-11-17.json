@@ -1,0 +1,24 @@
+{
+  "resultId": "result-1782086625694-9ibos9",
+  "inviteToken": "31d5712f93a14e14bc98792ddd4e18b3",
+  "patientId": "josoroma-mqn4h6m8",
+  "assessmentSlug": "level1-child-11-17",
+  "scoring": {
+    "assessmentSlug": "level1-child-11-17",
+    "patientId": "josoroma-mqn4h6m8",
+    "total": 14,
+    "average": 2.8,
+    "tScore": null,
+    "severity": "severe",
+    "dataQualityFlags": []
+  },
+  "answers": {
+    "item_1": 4,
+    "item_5": 3,
+    "item_7": 2,
+    "item_9": 1,
+    "item_11": 4
+  },
+  "createdAt": "2026-06-22T00:03:45.694Z",
+  "resultChart": "domain_bars"
+}

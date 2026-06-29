@@ -1,0 +1,24 @@
+{
+  "slug": "level2-repetitive-adult",
+  "title": "LEVEL 2—Repetitive Thoughts and Behaviors—Adult",
+  "description": "*Adapted from the Florida Obsessive-Compulsive Inventory (FOCI) Severity Scale (Part B)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "response",
+      "label": "LEVEL 2—Repetitive Thoughts and Behaviors—Adult",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "pid5-adult",
+  "title": "FOR CLINICIAN USE ONLY A. Personality Trait",
+  "description": "PID-5—Adult (Full Version), page 1 The Personality Inventory for DSM-5 (PID-5)—Adult",
+  "version": "1.0.0",
+  "instructions": "Instructions to the individual receiving care: This is a list of things different people might say about themselves.  We are",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "response",
+      "label": "FOR CLINICIAN USE ONLY A. Personality Trait",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": true
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "slug": "prison-community-risk-protective-factors",
+  "title": "Community Reintegration Risk and Protective Factors",
+  "description": "Maps protective factors and unresolved concerns before possible conditional release.",
+  "version": "1.0.0",
+  "instructions": "Use with case files, professional judgment, and local legal standards.",
+  "resultChart": "bar_chart",
+  "fields": [
+    {
+      "id": "family_support",
+      "label": "Stable family or community support",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None"
+        },
+        {
+          "value": 1,
+          "label": "Very limited"
+        },
+        {
+          "value": 2,
+          "label": "Some support"
+        },
+        {
+          "value": 3,
+          "label": "Reliable support"
+        },
+        {
+          "value": 4,
+          "label": "Strong verified support"
+        }
+      ]
+    },
+    {
+      "id": "employment_education",
+      "label": "Employment, training, or education pathway",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None"
+        },
+        {
+          "value": 1,
+          "label": "Unclear"
+        },
+        {
+          "value": 2,
+          "label": "Possible but not confirmed"
+        },
+        {
+          "value": 3,
+          "label": "Reasonably clear"
+        },
+        {
+          "value": 4,
+          "label": "Confirmed pathway"
+        }
+      ]
+    },
+    {
+      "id": "substance_risk_management",
+      "label": "Substance-use risk management plan",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No plan despite need"
+        },
+        {
+          "value": 1,
+          "label": "Weak plan"
+        },
+        {
+          "value": 2,
+          "label": "Basic plan"
+        },
+        {
+          "value": 3,
+          "label": "Clear plan"
+        },
+        {
+          "value": 4,
+          "label": "Clear plan with verified supports"
+        }
+      ]
+    },
+    {
+      "id": "victim_safety_considerations",
+      "label": "Victim and community safety considerations addressed",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Not addressed"
+        },
+        {
+          "value": 1,
+          "label": "Minimally addressed"
+        },
+        {
+          "value": 2,
+          "label": "Partially addressed"
+        },
+        {
+          "value": 3,
+          "label": "Clearly addressed"
+        },
+        {
+          "value": 4,
+          "label": "Comprehensively addressed"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "family_support",
+      "employment_education",
+      "substance_risk_management",
+      "victim_safety_considerations"
+    ],
+    "t_score": false
+  }
+}

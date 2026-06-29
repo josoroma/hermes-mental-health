@@ -1,0 +1,24 @@
+{
+  "slug": "pid5-child",
+  "title": "FOR CLINICIAN USE ONLY A. Personality Trait Facet B. PID-5 items C. Total/Partial",
+  "description": "PID-5—Child (Full Version), Page 1 The Personality Inventory for DSM-5 (PID-5)—Child Age 11–17",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "t_score_gauge",
+  "fields": [
+    {
+      "id": "response",
+      "label": "FOR CLINICIAN USE ONLY A. Personality Trait Facet B. PID-5 items C. Total/Partial",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": true
+  }
+}

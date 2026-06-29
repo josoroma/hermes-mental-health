@@ -1,0 +1,179 @@
+{
+  "slug": "level1-child-11-17",
+  "title": "DSM-5-TR Self-Rated Level 1 Cross-Cutting Symptom Measure—Child Age 11–17",
+  "description": "Name: ________________________________ Age: ____                                                    Date:___________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "domain_bars",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "Been bothered by stomachaches, headaches, or other aches and pains?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Depression",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "Had less fun doing things than you used to?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Anxiety",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "Felt more irritated or easily annoyed than usual?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Suicidal Ideation",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "Started lots more projects than usual or done more risky things than usual?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Psychosis",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "item_11",
+      "label": "Felt nervous, anxious, or scared?",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "domain": "Sleep Problems",
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Slight/Rare"
+        },
+        {
+          "value": 2,
+          "label": "Mild/Several days"
+        },
+        {
+          "value": 3,
+          "label": "Moderate/More than half"
+        },
+        {
+          "value": 4,
+          "label": "Severe/Nearly every day"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "domain_max",
+    "maxScale": 4,
+    "t_score": false,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_5",
+      "item_7",
+      "item_9",
+      "item_11"
+    ]
+  }
+}

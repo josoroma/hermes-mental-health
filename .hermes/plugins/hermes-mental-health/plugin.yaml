@@ -1,0 +1,22 @@
+name: hermes-mental-health
+version: 0.1.0
+description: Herramientas locales para el manejo de evaluaciones de salud mental DSM-5-TR.
+language: es
+entrypoint: tools.py
+schemas: schemas.py
+corpus_root: data
+patient_root: data/processed/patients
+corpus_roots:
+  - data/markdown
+  - data/shared/templates
+  - data/corpus/assessment-measures
+smart_context:
+  - data/shared/templates/index.json
+  - data/shared/templates/json/*.json
+  - data/corpus/assessment-measures/manifest.json
+source_formats:
+  - pdf
+  - html
+  - markdown
+  - yaml
+  - json

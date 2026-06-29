@@ -1,0 +1,267 @@
+{
+  "slug": "severity-dissociative-adult",
+  "title": "Severity of Dissociative Symptoms—Adult",
+  "description": "Brief Dissociative Experiences Scale (DES-B)—Modified",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "I find myself staring into space and thinking of nothing.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "People, objects, or the world around me seem strange or unreal.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "I find that I did things that I do not remember doing.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "When I am alone, I talk out loud to myself.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "I feel as though I were looking at the world through a fog so that people and things seem far away or unclear.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "I am able to ignore pain.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "I act so differently from one situation to another that it is almost as if I were two different people.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "I can do things very easily that would usually be hard for me.",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8"
+    ],
+    "t_score": false
+  }
+}

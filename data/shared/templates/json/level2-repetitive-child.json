@@ -1,0 +1,24 @@
+{
+  "slug": "level2-repetitive-child",
+  "title": "LEVEL 2—Repetitive Thoughts and Behaviors—Child Age 11–17",
+  "description": "Adapted from the Children’s Florida Obsessive-Compulsive Inventory (C-FOCI) Severity Scale",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "response",
+      "label": "LEVEL 2—Repetitive Thoughts and Behaviors—Child Age 11–17",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

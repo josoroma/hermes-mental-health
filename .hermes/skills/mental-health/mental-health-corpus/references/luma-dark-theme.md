@@ -1,0 +1,139 @@
+# Shadcn Luma Dark Theme — CSS Reference
+
+> The luma preset (`https://ui.shadcn.com/create?preset=b2D0wqNxT`) cannot be
+> scraped from the web — the page is an SPA. Manually craft the CSS instead.
+
+## Token mapping for DSM-5-TR severity bands
+
+```
+--chart-1: oklch(0.65 0.19 142)   → green  → severity: none
+--chart-2: oklch(0.75 0.16 85)    → yellow → severity: mild
+--chart-3: oklch(0.68 0.18 48)    → orange → severity: moderate
+--chart-4: oklch(0.60 0.20 36)    → dark orange → severity: moderately severe
+--chart-5: oklch(0.55 0.22 22)    → red → severity: severe
+```
+
+## Full globals.css (dark-only, no light theme)
+
+```css
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+.dark {
+  --background: oklch(0.13 0.015 260);
+  --foreground: oklch(0.95 0.005 260);
+  --card: oklch(0.17 0.015 260);
+  --card-foreground: oklch(0.95 0.005 260);
+  --popover: oklch(0.17 0.015 260);
+  --popover-foreground: oklch(0.95 0.005 260);
+  --primary: oklch(0.52 0.22 255);
+  --primary-foreground: oklch(0.98 0.005 255);
+  --secondary: oklch(0.22 0.02 260);
+  --secondary-foreground: oklch(0.95 0.005 260);
+  --muted: oklch(0.22 0.02 260);
+  --muted-foreground: oklch(0.65 0.02 260);
+  --accent: oklch(0.22 0.02 260);
+  --accent-foreground: oklch(0.95 0.005 260);
+  --destructive: oklch(0.58 0.22 22);
+  --border: oklch(0.28 0.02 260);
+  --input: oklch(0.28 0.02 260);
+  --ring: oklch(0.52 0.22 255);
+  --chart-1: oklch(0.65 0.19 142);
+  --chart-2: oklch(0.75 0.16 85);
+  --chart-3: oklch(0.68 0.18 48);
+  --chart-4: oklch(0.60 0.20 36);
+  --chart-5: oklch(0.55 0.22 22);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.15 0.015 260);
+  --sidebar-foreground: oklch(0.95 0.005 260);
+  --sidebar-primary: oklch(0.52 0.22 255);
+  --sidebar-primary-foreground: oklch(0.98 0.005 255);
+  --sidebar-accent: oklch(0.22 0.02 260);
+  --sidebar-accent-foreground: oklch(0.95 0.005 260);
+  --sidebar-border: oklch(0.28 0.02 260);
+  --sidebar-ring: oklch(0.52 0.22 255);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+```
+
+## Layout.tsx dark mode enforcement
+
+```tsx
+<html
+  lang="en"
+  className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
+  style={{ colorScheme: "dark" }}
+>
+```
+
+Key: `dark` class is **unconditional** — no `next-themes`, no theme toggle,
+no light mode fallback. `color-scheme: dark` ensures native controls render dark.
+
+## Dependencies to pin
+
+```
+zod@3                        # NOT v4 — incompatible with @hookform/resolvers@5
+@hookform/resolvers@4        # NOT v5 — type errors with zod@3
+react-hook-form              # latest is fine
+```
+
+If type errors appear on `useZodForm`, check your zod version: `npm ls zod`.
+Downgrade to v3: `npm install zod@3`.

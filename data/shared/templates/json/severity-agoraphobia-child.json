@@ -1,0 +1,329 @@
+{
+  "slug": "severity-agoraphobia-child",
+  "title": "Severity Measure for Agoraphobia—Child Age 11–17",
+  "description": "Name: ____________________________________ Age: ______ Date: _________________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "item_1",
+      "label": "felt moments of sudden terror, fear, or fright in these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_2",
+      "label": "felt anxious, worried, or nervous about these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_3",
+      "label": "have had thoughts about panic attacks, uncomfortable physical sensations, getting lost, or being overcome with fear in these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_4",
+      "label": "felt a racing heart, sweaty, trouble breathing, faint, or shaky in these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_5",
+      "label": "felt tense muscles, felt on edge or restless, or had trouble relaxing in these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_6",
+      "label": "avoided, or did not approach or enter, these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_7",
+      "label": "moved away from these situations, left them early, or remained close to the exits",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_8",
+      "label": "spent a lot of time preparing for, or procrastinating about (putting off), these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_9",
+      "label": "distracted myself to avoid thinking about these situations",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    },
+    {
+      "id": "item_10",
+      "label": "needed help to cope with these situations (e.g., alcohol or medication, superstitious objects, other people)",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Never/Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Occasionally/Slight"
+        },
+        {
+          "value": 2,
+          "label": "Half the time/Mild"
+        },
+        {
+          "value": 3,
+          "label": "Most of the time/Moderate"
+        },
+        {
+          "value": 4,
+          "label": "All the time/Severe"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "item_1",
+      "item_2",
+      "item_3",
+      "item_4",
+      "item_5",
+      "item_6",
+      "item_7",
+      "item_8",
+      "item_9",
+      "item_10"
+    ],
+    "t_score": false
+  }
+}

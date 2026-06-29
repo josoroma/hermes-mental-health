@@ -1,0 +1,24 @@
+{
+  "slug": "level2-somatic-child",
+  "title": "LEVEL 2—Somatic Symptom—Child Age 11–17",
+  "description": "Adapted from the Patient Health Questionnaire Physical Symptoms (PHQ-15)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "response",
+      "label": "LEVEL 2—Somatic Symptom—Child Age 11–17",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 2,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

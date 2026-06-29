@@ -1,0 +1,45 @@
+{
+  "slug": "severity-depression-child",
+  "title": "Severity Measure for Depression—Child Age 11–17",
+  "description": "PHQ-9 modified for Adolescents (PHQ-A)—Adapted",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "response",
+      "label": "Severity Measure for Depression—Child Age 11–17",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 3,
+    "t_score": false,
+    "severityThresholds": {
+      "none": [
+        0,
+        4
+      ],
+      "mild": [
+        5,
+        9
+      ],
+      "moderate": [
+        10,
+        14
+      ],
+      "moderately_severe": [
+        15,
+        19
+      ],
+      "severe": [
+        20,
+        27
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": []
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "slug": "clinician-psychosis",
+  "title": "Clinician-Rated Dimensions of Psychosis Symptom Severity",
+  "description": "Name:________________________________ Age: _______ Date:________________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "domain_1",
+      "label": "Hallucinations Not",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    },
+    {
+      "id": "domain_2",
+      "label": "Delusions Not",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    },
+    {
+      "id": "domain_3",
+      "label": "Disorganized",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    },
+    {
+      "id": "domain_4",
+      "label": "Abnormal",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    },
+    {
+      "id": "domain_5",
+      "label": "Negative",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    },
+    {
+      "id": "domain_6",
+      "label": "Impaired",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    },
+    {
+      "id": "domain_7",
+      "label": "Depression Not",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    },
+    {
+      "id": "domain_8",
+      "label": "Mania Not",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "None/Not present"
+        },
+        {
+          "value": 1,
+          "label": "Equivocal/Mild"
+        },
+        {
+          "value": 2,
+          "label": "Moderate"
+        },
+        {
+          "value": 3,
+          "label": "Severe"
+        },
+        {
+          "value": 4,
+          "label": "Extreme"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 4,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "domain_1",
+      "domain_2",
+      "domain_3",
+      "domain_4",
+      "domain_5",
+      "domain_6",
+      "domain_7",
+      "domain_8"
+    ],
+    "t_score": false
+  }
+}

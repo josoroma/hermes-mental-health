@@ -1,0 +1,24 @@
+{
+  "slug": "level2-irritability-parent",
+  "title": "LEVEL 2—Irritability—Parent/Guardian of Child Age 6–17",
+  "description": "* Affective Reactivity Index (ARI)",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "response",
+      "label": "LEVEL 2—Irritability—Parent/Guardian of Child Age 6–17",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 2,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [],
+    "t_score": false
+  }
+}

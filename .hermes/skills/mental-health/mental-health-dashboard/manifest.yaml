@@ -1,0 +1,4 @@
+name: mental-health-dashboard
+entrypoint: SKILL.md
+files:
+  - SKILL.md

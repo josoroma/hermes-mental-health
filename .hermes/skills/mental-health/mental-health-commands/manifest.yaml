@@ -1,0 +1,4 @@
+name: mental-health-commands
+entrypoint: SKILL.md
+files:
+  - SKILL.md

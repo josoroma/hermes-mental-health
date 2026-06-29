@@ -1,0 +1,8 @@
+{
+  "id": "note-1782700005000-demo-n2",
+  "type": "note",
+  "title": "Medication Coordination Note",
+  "content": "## Clinical Note — Medication Coordination\n\n**Date:** July 5, 2026\n\n### Communication with PCP\n\nSent electronic message to Dr. Martinez (PCP) regarding sertraline titration. Recommended increase from 50 mg to 75 mg at next visit given:\n- Patient tolerating 50 mg well (initial nausea resolved)\n- Partial response observed (15% subjective improvement, resolution of passive death ideation)\n- Prior therapeutic response at 100 mg documented in records\n\n### Current Medication\n\n- Sertraline 50 mg daily (week 5 of current trial)\n- Lisinopril 10 mg daily (hypertension)\n\n### Side Effect Monitoring\n\n- GI: Initial nausea resolved after week 2\n- Activation: None reported\n- Sexual: Not assessed yet — plan to address at session 4\n- Sleep: Some improvement (early-morning awakening reduced)\n\n### Plan\n\n- Continue 50 mg until PCP visit\n- Target 75 mg at next PCP visit (~July 15)\n- Target 100 mg by week 8 if tolerated\n- Monitor for activation/hypomanic switch with dose increase",
+  "createdAt": "2026-07-05T16:30:00.000Z",
+  "updatedAt": "2026-07-05T16:30:00.000Z"
+}

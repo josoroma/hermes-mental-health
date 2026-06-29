@@ -1,0 +1,50 @@
+{
+  "slug": "clinician-cd",
+  "title": "CLINICIAN-RATED SEVERITY OF",
+  "description": "Name: __________________________________ Age: ____ Date:_____________",
+  "version": "1.0.0",
+  "instructions": "",
+  "resultChart": "severity_bar",
+  "fields": [
+    {
+      "id": "rating",
+      "label": "Clinical severity rating",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Level 0"
+        },
+        {
+          "value": 1,
+          "label": "Level 1"
+        },
+        {
+          "value": 2,
+          "label": "Level 2"
+        },
+        {
+          "value": 3,
+          "label": "Level 3"
+        },
+        {
+          "value": 4,
+          "label": "Level 4"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "total",
+    "maxScale": 3,
+    "severityThresholds": {},
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "rating"
+    ],
+    "t_score": false
+  }
+}

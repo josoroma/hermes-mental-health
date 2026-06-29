@@ -1,0 +1,160 @@
+{
+  "slug": "prison-rehabilitation-readiness",
+  "title": "Readiness for Sentence Reduction Review",
+  "description": "Evaluates behavioral change, accountability, program participation, and reentry preparation for correctional review.",
+  "version": "1.0.0",
+  "instructions": "Complete using verified institutional records, professional interviews, and multidisciplinary review. This tool does not determine release by itself.",
+  "resultChart": "radar_chart",
+  "fields": [
+    {
+      "id": "accountability",
+      "label": "Accountability for harm caused",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No accountability shown"
+        },
+        {
+          "value": 1,
+          "label": "Minimal accountability"
+        },
+        {
+          "value": 2,
+          "label": "Partial accountability"
+        },
+        {
+          "value": 3,
+          "label": "Consistent accountability"
+        },
+        {
+          "value": 4,
+          "label": "Deep and sustained accountability"
+        }
+      ]
+    },
+    {
+      "id": "disciplinary_record",
+      "label": "Recent disciplinary record",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Severe recent incidents"
+        },
+        {
+          "value": 1,
+          "label": "Repeated incidents"
+        },
+        {
+          "value": 2,
+          "label": "Some concerns"
+        },
+        {
+          "value": 3,
+          "label": "Mostly stable"
+        },
+        {
+          "value": 4,
+          "label": "Sustained positive conduct"
+        }
+      ]
+    },
+    {
+      "id": "program_completion",
+      "label": "Completion of rehabilitation programs",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No participation"
+        },
+        {
+          "value": 1,
+          "label": "Irregular participation"
+        },
+        {
+          "value": 2,
+          "label": "Partial completion"
+        },
+        {
+          "value": 3,
+          "label": "Completed key programs"
+        },
+        {
+          "value": 4,
+          "label": "Completed and applies learning"
+        }
+      ]
+    },
+    {
+      "id": "reentry_plan",
+      "label": "Housing, work, study, or support plan after release",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No plan"
+        },
+        {
+          "value": 1,
+          "label": "Very weak plan"
+        },
+        {
+          "value": 2,
+          "label": "Basic plan"
+        },
+        {
+          "value": 3,
+          "label": "Clear plan"
+        },
+        {
+          "value": 4,
+          "label": "Verified and realistic plan"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "accountability",
+      "disciplinary_record",
+      "program_completion",
+      "reentry_plan"
+    ],
+    "t_score": false
+  }
+}

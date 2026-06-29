@@ -1,0 +1,5 @@
+{
+  "consentStatus": "granted",
+  "createdAt": "{{CREATED_AT}}",
+  "updatedAt": "{{CREATED_AT}}"
+}

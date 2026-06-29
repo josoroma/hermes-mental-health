@@ -1,0 +1,160 @@
+{
+  "slug": "church-marriage-restoration",
+  "title": "Marriage Restoration Support Assessment",
+  "description": "For church counseling teams supporting couples considering reconciliation, separation, or divorce.",
+  "version": "1.0.0",
+  "instructions": "Use only with consent from both adults. Refer to licensed professionals when there is abuse, coercion, severe conflict, addiction, or safety risk.",
+  "resultChart": "composed_chart",
+  "fields": [
+    {
+      "id": "communication_quality",
+      "label": "Quality of communication",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Hostile or unsafe"
+        },
+        {
+          "value": 1,
+          "label": "Mostly negative"
+        },
+        {
+          "value": 2,
+          "label": "Mixed"
+        },
+        {
+          "value": 3,
+          "label": "Mostly respectful"
+        },
+        {
+          "value": 4,
+          "label": "Consistently respectful"
+        }
+      ]
+    },
+    {
+      "id": "mutual_commitment",
+      "label": "Mutual willingness to work on the relationship",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Neither willing"
+        },
+        {
+          "value": 1,
+          "label": "One-sided and weak"
+        },
+        {
+          "value": 2,
+          "label": "Uncertain"
+        },
+        {
+          "value": 3,
+          "label": "Both somewhat willing"
+        },
+        {
+          "value": 4,
+          "label": "Both clearly willing"
+        }
+      ]
+    },
+    {
+      "id": "forgiveness_repair",
+      "label": "Capacity for forgiveness and repair",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "No repair possible now"
+        },
+        {
+          "value": 1,
+          "label": "Very limited"
+        },
+        {
+          "value": 2,
+          "label": "Some openness"
+        },
+        {
+          "value": 3,
+          "label": "Meaningful openness"
+        },
+        {
+          "value": 4,
+          "label": "Strong repair capacity"
+        }
+      ]
+    },
+    {
+      "id": "safety_boundaries",
+      "label": "Safety and boundaries are respected",
+      "type": "scale",
+      "required": true,
+      "min": 0,
+      "max": 4,
+      "options": [
+        {
+          "value": 0,
+          "label": "Unsafe"
+        },
+        {
+          "value": 1,
+          "label": "Major concerns"
+        },
+        {
+          "value": 2,
+          "label": "Some concerns"
+        },
+        {
+          "value": 3,
+          "label": "Mostly respected"
+        },
+        {
+          "value": 4,
+          "label": "Clearly respected"
+        }
+      ]
+    }
+  ],
+  "scoringRule": {
+    "calculation": "average",
+    "maxScale": 4,
+    "severityThresholds": {
+      "none": [
+        0,
+        1.49
+      ],
+      "mild": [
+        1.5,
+        2.49
+      ],
+      "moderate": [
+        2.5,
+        3.24
+      ],
+      "moderately_severe": [
+        3.25,
+        4
+      ]
+    },
+    "reverseScoredItems": [],
+    "requiredFields": [
+      "communication_quality",
+      "mutual_commitment",
+      "forgiveness_repair",
+      "safety_boundaries"
+    ],
+    "t_score": false
+  }
+}

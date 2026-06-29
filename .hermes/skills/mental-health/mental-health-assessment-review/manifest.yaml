@@ -1,0 +1,6 @@
+name: mental-health-assessment-review
+entrypoint: SKILL.md
+files:
+  - SKILL.md
+  - references/phq-9-interpretation.md
+  - references/gad-7-interpretation.md
